@@ -596,6 +596,12 @@ public abstract partial class SharedMoverController : VirtualController
             sound = modifier.FootstepSoundCollection;
             return sound != null;
         }
+        // Den changes to create shoes (but but not shoes) slightly reorganized
+        if (TryComp<NaturalFootstepSoundsComponent>(shoes, out var _))
+        {
+            return false;
+        }
+        // End of den changes
 
         return TryGetFootstepSound(uid, xform, shoes != null, out sound, tileDef: tileDef);
     }
