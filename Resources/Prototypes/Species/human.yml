@@ -59,6 +59,9 @@
     HeadTop:
       points: 1
       required: false
+    HeadSide: #imp
+      points: 2 #up from 1 because i moved earrings here
+      required: false
     UndergarmentTop:
       points: 1
       required: false
