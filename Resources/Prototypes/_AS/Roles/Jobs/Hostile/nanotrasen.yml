@@ -7,7 +7,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBasic
     belt: ClothingBeltSecurity
-    back: NanoTrasenBackpackLoot_SecGrunt
+    back: NanoTrasenBackpackLoot_SecGruntMk58
 
 - type: startingGear
   id: ASNanoTrasenRogueGruntBaton
@@ -18,17 +18,61 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorBasic
     belt: ClothingBeltSecurity
-    back: NanoTrasenBackpackLoot_SecGrunt # todo: make and then change to baton specific backpack later
+    back: NanoTrasenBackpackLoot_SecGruntBaton
   inhand:
     - Stunbaton
 
 - type: startingGear
-  id: ASNanoTrasenRogueOfficer
+  id: ASNanoTrasenRogueOfficerLecter
   equipment:
     jumpsuit: ClothingUniformJumpsuitSec
     head: ASClothingHeadHelmetHardsuitConstableUnremoveable
     shoes: ClothingShoesBootsCombat
-    gloves: ClothingHandsGlovesCombat # todo: make lecter and laser carbine gloves like the syndicate commander has
+    gloves: ClothingHandsGlovesColorBlackLecter
     outerClothing: ASClothingOuterHardsuitConstableUnremoveable
     belt: ClothingBeltSecurity
-    back: NanoTrasenBackpackLoot_SecGrunt #todo: make and then change to officer specific backpack later
+    back: NanoTrasenBackpackLoot_SecGruntLecter
+
+- type: startingGear
+  id: ASNanoTrasenRogueOfficerLaser
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ASClothingHeadHelmetHardsuitConstableUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackLaser
+    outerClothing: ASClothingOuterHardsuitConstableUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecGruntLecter
+
+- type: startingGear
+  id: ASNanoTrasenRogueOfficerDrozd
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ASClothingHeadHelmetHardsuitSheduUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackDrozd
+    outerClothing: ASClothingOuterHardsuitSheduUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecMedicDrozd
+
+- type: startingGear
+  id: ASNanoTrasenRogueOfficerWt550
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ASClothingHeadHelmetHardsuitSheduUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackWT550
+    outerClothing: ASClothingOuterHardsuitSheduUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecMedicWt550
+
+- type: startingGear
+  id: ASNanoTrasenRogueWarden
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ASClothingHeadHelmetHardsuitHauberkUnremoveable
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackEnforcer
+    outerClothing: ASClothingOuterHardsuitHauberkUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_SecWarden

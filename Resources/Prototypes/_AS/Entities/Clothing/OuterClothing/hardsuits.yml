@@ -242,7 +242,7 @@
     sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitShedu
+    clothingPrototype: ASClothingHeadHelmetHardsuitShedu
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
@@ -274,7 +274,7 @@
     sprintModifier: 0.85
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitHauberk
+    clothingPrototype: ASClothingHeadHelmetHardsuitHauberk
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable] # BaseCommandContraband<BaseC2ContrabandUnredeemable
@@ -306,7 +306,7 @@
     sprintModifier: 0.875
   - type: HeldSpeedModifier
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitGolem
+    clothingPrototype: ASClothingHeadHelmetHardsuitGolem
 
 # Suffixed NT Sec hardsuits - Unremoveables for NPC use
 - type: entity

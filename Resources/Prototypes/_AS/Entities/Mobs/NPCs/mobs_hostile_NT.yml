@@ -89,13 +89,14 @@
   name: NT sec trooper
   parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
   id: MobNTSecTrooperLecter
+  description: A Sec Trooper, the hard spine of most station combat teams, and absolutely a problem for you.
   categories: [ HideSpawnMenu ]
   components:
   - type: Inventory
     templateId: human
   - type: Loadout
     prototypes:
-    - ASNanoTrasenRogueOfficer
+    - ASNanoTrasenRogueOfficerLecter
   - type: Damageable
     damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
   - type: RechargeBasicEntityAmmo
@@ -113,7 +114,140 @@
     maxAngle: 12
     angleIncrease: 2.5
     angleDecay: 3
-    ShotsPerBurst: 1
     SelectedMode: FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      path: /Audio/Weapons/Guns/Gunshots/rifle.ogg
+
+- type: entity
+  name: NT sec trooper
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecTrooperLaser
+  description: A Sec Trooper, the hard spine of most station combat teams, and absolutely a problem for you.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueOfficerLaser
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: ProjectileBatteryAmmoProvider
+    proto: NFBulletLaserHeavy
+    fireCost: 80
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 600
+    startingCharge: 600
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    minAngle: 4
+    maxAngle: 12
+    angleIncrease: 2.5
+    angleDecay: 3
+    ShotsPerBurst: 3
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+
+- type: entity
+  name: NT sec medic
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecMedTroopDrozd
+  description: A Sec medic, today they don't care about keeping you alive.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueOfficerDrozd
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol35
+    capacity: 10
+    count: 10
+  - type: Gun
+    showExamineText: false
+    fireRate: 7
+    minAngle: 6.7
+    maxAngle: 17
+    angleIncrease: 1
+    angleDecay: 2
+    SelectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+
+- type: entity
+  name: NT sec medic
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecMedTroopWt550
+  description: A Sec medic, today they don't care about keeping you alive.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueOfficerWt550
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.5
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol35
+    capacity: 10
+    count: 10
+  - type: Gun
+    showExamineText: false
+    fireRate: 7
+    minAngle: 4
+    maxAngle: 15
+    angleIncrease: 1
+    angleDecay: 2
+    SelectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+
+- type: entity
+  name: NT sec warden
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTSecWarden
+  description: A Brigmaster, with no brig to guard. Wardloose upon ye.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueWarden
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2.2
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFShellShotgunBuckshot
+    capacity: 5
+    count: 5
+  - type: Gun
+    showExamineText: false
+    fireRate: 1.5
+    minAngle: 6.8
+    maxAngle: 26
+    angleIncrease: 2.5
+    angleDecay: 3
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg

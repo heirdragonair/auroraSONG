@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#todo: spawner for each individual mob type, with loot backpacks as variety
+- type: entity
   name: Nanotrasen Grunt Spawner
   id: ASSpawnMobNanotrasenGrunt
   parent: MarkerBase
@@ -44,3 +45,53 @@
   - type: RandomSpawner
     prototypes:
     - MobNTSecTrooperLecter
+    - MobNTSecTrooperLaser
+
+- type: entity
+  name: Nanotrasen Medic Spawner
+  id: ASSpawnMobNanotrasenMedic
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/OuterClothing/Hardsuits/brigmedic.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Head/Hardsuits/brigmedic.rsi
+      state: off-equipped-HELMET
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+    - MobNTSecMedTroopDrozd
+    - MobNTSecMedTroopWt550
+
+- type: entity
+  name: Nanotrasen Warden Spawner
+  id: ASSpawnMobNanotrasenWarden
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/OuterClothing/Hardsuits/security-warden.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Head/Hardsuits/security-warden.rsi
+      state: off-equipped-HELMET
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+    - MobNTSecWarden
