@@ -175,7 +175,7 @@
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: spidermirror
-  shader: unshaded
+    shader: unshaded
 
 # Arms
 - type: marking
