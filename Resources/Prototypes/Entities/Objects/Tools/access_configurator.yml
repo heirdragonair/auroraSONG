@@ -22,15 +22,16 @@
       - Armory
       # - Atmospherics # Frontier
       # - Bar # Frontier
-      - Bailiff # Frontier
+      - Lieutenant # Aurora's Song - Changed from Bailiff to Lieutenant
       - Brig
-      - Brigmedic # Frontier
+#      - Brigmedic # Frontier | Aurora's Song - Converted to Corpsman
       - Captain
       # - Cargo # Frontier
       # - Chapel # Frontier
       # - Chemistry # Frontier
-      # - ChiefMedicalOfficer # Frontier
       - Command
+      - Corpsman # Aurora's Song - Added Corpsman access
+      - ChiefMedicalOfficer # Aurora's Song: Readded, moved w.r.t DoC
       - Detective # Frontier - moved down
       - Engineering
       - External
@@ -103,13 +104,14 @@
     - Atmospherics
     - Bar
     - Brig
-    - Brigmedic # Frontier
+#    - Brigmedic # Frontier | Aurora's Song - Converted to Corpsman
     - Captain
     - Cargo
     - Chapel
     - Chemistry
     - ChiefMedicalOfficer
     - Command
+    - Corpsman # Aurora's Song - Added Corpsman access
     - Cryogenics
     - Borg # Frontier: reordered for "Cyborg"
     - Detective # Frontier: moved down
@@ -140,6 +142,7 @@
     - StationTrafficController # Frontier
     - Theatre
     - CentralCommand
+    - ColonialCommand # Aurora's Song - Added Colonial Command access
     - NuclearOperative
     - SyndicateAgent
     - Wizard
@@ -148,7 +151,7 @@
     - GenpopLeave
     privilegedIdSlot:
       name: id-card-console-privileged-id
-      startingItem: UniversalIDCard
+      startingItem: ASUniversalIDCard # Aurora's Song - switched to ASUniversalIDCard
       ejectSound: /Audio/Machines/id_swipe.ogg
       insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
       ejectOnBreak: true

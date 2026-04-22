@@ -25,6 +25,7 @@
     - WhitelistChameleonIdCard
   - type: StealTarget
     stealGroup: IDCard
+  - type: NanoChatCard # DeltaV
   # Frontier: extra components
   - type: StaticPrice
     price: 5
@@ -43,7 +44,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idpassenger
   - type: PresetIdCard
     job: Passenger
@@ -57,7 +59,8 @@
     job: TechnicalAssistant
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idintern-tech
 
 - type: entity
@@ -69,7 +72,8 @@
     job: MedicalIntern
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idintern-med
 
 - type: entity
@@ -81,7 +85,8 @@
     job: ResearchAssistant
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idintern-sci
 
 - type: entity
@@ -105,7 +110,8 @@
     job: ServiceWorker
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idintern-service
 
 - type: entity
@@ -115,7 +121,8 @@
   components:
   - type: Sprite
     layers:
-    - state: gold
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: gold
     - state: idcaptain
   - type: Item
     heldPrefix: gold
@@ -161,7 +168,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idstationengineer
   - type: PresetIdCard
     job: StationEngineer
@@ -173,7 +181,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idmedicaldoctor
   - type: PresetIdCard
     job: MedicalDoctor
@@ -185,7 +194,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idparamedic
   - type: PresetIdCard
     job: Paramedic
@@ -197,7 +207,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idchemist
   - type: PresetIdCard
     job: Chemist
@@ -209,7 +220,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idcargotechnician
   - type: PresetIdCard
     job: CargoTechnician
@@ -221,7 +233,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idshaftminer
   - type: PresetIdCard
     job: SalvageSpecialist
@@ -233,7 +246,8 @@
   components:
     - type: Sprite
       layers:
-        - state: silver
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: silver
         - state: idquartermaster
     - type: Item
       heldPrefix: silver
@@ -247,7 +261,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idscientist
   - type: PresetIdCard
     job: Scientist
@@ -259,7 +274,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idclown
   - type: PresetIdCard
     job: Clown
@@ -271,7 +287,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idmime
   - type: PresetIdCard
     job: Mime
@@ -283,7 +300,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idchaplain
     - type: PresetIdCard
       job: Chaplain
@@ -296,7 +314,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idjanitor
   - type: PresetIdCard
     job: Janitor
@@ -308,7 +327,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idbartender
   - type: PresetIdCard
     job: Bartender
@@ -320,7 +340,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idbartender
     - type: PresetIdCard
       job: Bartender
@@ -352,7 +373,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idcook
   - type: PresetIdCard
     job: Chef
@@ -364,7 +386,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idbotanist
     - type: PresetIdCard
       job: Botanist
@@ -376,7 +399,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idcurator
     - type: PresetIdCard
       job: Librarian
@@ -388,7 +412,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idlawyer
     - type: PresetIdCard
       job: Lawyer
@@ -400,7 +425,8 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: silver
     - state: idheadofpersonnel
   - type: Item
     heldPrefix: silver
@@ -414,7 +440,8 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: silver
     - state: idchiefengineer
   - type: Item
     heldPrefix: silver
@@ -428,7 +455,8 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: silver
     - state: idchiefmedicalofficer
   - type: Item
     heldPrefix: silver
@@ -442,7 +470,8 @@
   components:
   - type: Sprite
     layers:
-    - state: silver
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: silver
     - state: idresearchdirector
   - type: Item
     heldPrefix: silver
@@ -470,7 +499,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idvisitor
   - type: IdCard
     jobTitle: job-title-visitor
@@ -488,7 +518,7 @@
     - state: default
     - state: idbrigmedic
   - type: PresetIdCard # Frontier
-    job: Brigmedic # Frontier
+    job: Corpsman # Aurora's Song - Switched to Corpsman
 
 - type: entity
   parent: IDCardStandard
@@ -503,6 +533,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CentralCommandOfficial
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -517,6 +549,8 @@
     job: ERTLeader
   - type: Item
     heldPrefix: gold
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -531,6 +565,8 @@
     job: ERTChaplain
   - type: Item
     heldPrefix: blue
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -543,6 +579,8 @@
     - state: ert_engineer
   - type: PresetIdCard
     job: ERTEngineer
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -555,6 +593,8 @@
     - state: ert_janitor
   - type: PresetIdCard
     job: ERTJanitor
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -567,6 +607,8 @@
     - state: ert_medic
   - type: PresetIdCard
     job: ERTMedical
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -579,6 +621,8 @@
     - state: ert_security
   - type: PresetIdCard
     job: ERTSecurity
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -587,7 +631,8 @@
   components:
     - type: Sprite
       layers:
-        - state: default
+        - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+          state: default
         - state: idmusician
     - type: PresetIdCard
       job: Musician
@@ -604,6 +649,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: DeathSquad
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   name: contractor ID card # Frontier: passenger<contractor
@@ -619,7 +666,8 @@
     - SyndicateAgent
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idcontractor # Frontier: idpassenger<idcontractor
       sprite: _NF/Objects/Misc/id_cards.rsi # Frontier
   - type: AgentIDCard
@@ -639,6 +687,8 @@
         type: AgentIDCardBoundUserInterface
       enum.ChameleonUiKey.Key:
         type: ChameleonBoundUserInterface
+  - type: NanoChatCard # DeltaV
+    listNumber: false
   - type: Contraband # Frontier
     hideValues: true # Frontier
 
@@ -661,7 +711,8 @@
   components:
   - type: Sprite
     layers:
-    - state: orange
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: orange
     - state: idatmospherictechnician
   - type: PresetIdCard
     job: AtmosphericTechnician
@@ -678,6 +729,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: [ BaseC3PirateContraband, IDCardStandard ] # Frontier: BaseMajorContraband<BaseC3PirateContraband
@@ -692,6 +745,8 @@
     tags:
     - NuclearOperative
     - SyndicateAgent
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -700,7 +755,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idpsychologist
   - type: PresetIdCard
     job: Psychologist
@@ -712,7 +768,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idreporter
   - type: PresetIdCard
     job: Reporter
@@ -724,7 +781,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idboxer
   - type: PresetIdCard
     job: Boxer
@@ -736,7 +794,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idzookeeper
   - type: PresetIdCard
     job: Zookeeper
@@ -748,7 +807,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: iddetective
   - type: PresetIdCard
     job: Detective
@@ -762,7 +822,8 @@
   components:
   - type: Sprite
     layers:
-    - state: orange
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: orange
   - type: Item
     heldPrefix: orange
   - type: Access
@@ -803,6 +864,8 @@
     heldPrefix: blue
   - type: PresetIdCard
     job: CBURN
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: IDCardStandard
@@ -812,12 +875,15 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idcluwne
   - type: IdCard
     jobTitle: job-title-cluwne
     jobIcon: JobIconCluwne
   - type: Unremoveable
+  - type: NanoChatCard # DeltaV
+    listNumber: false
 
 - type: entity
   parent: EngineeringIDCard
@@ -826,7 +892,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idseniorengineer
 
 - type: entity
@@ -836,7 +903,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idseniorresearcher
 
 - type: entity
@@ -846,7 +914,8 @@
   components:
   - type: Sprite
     layers:
-    - state: default
+    - sprite: _AS/Objects/Misc/id_cards.rsi # Aurora's Song - redirected base layer to AS directory
+      state: default
     - state: idseniorphysician
 
 - type: entity
@@ -859,7 +928,7 @@
     - state: default
     - state: idseniorofficer
   - type: PresetIdCard
-    job: SeniorOfficer
+    job: Sergeant # Aurora's Song - Switched to Sergeant
 
 - type: entity
   parent: IDCardStandard
@@ -917,3 +986,6 @@
     interfaces:
       enum.AgentIDCardUiKey.Key:
         type: AgentIDCardBoundUserInterface
+  - type: NanoChatCard # DeltaV
+    notificationsMuted: true
+    listNumber: false

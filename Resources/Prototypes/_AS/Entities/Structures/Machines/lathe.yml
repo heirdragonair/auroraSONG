@@ -33,16 +33,19 @@
     - NFBasicEVAToolsStatic
     - NFMaterialElectronicsStatic
     - ReportingStatic # DeltaV
-    - NfsdWeaponsStatic
-    - NfsdPracticeStatic
-    - NfsdAmmoStatic
+    - SLEWeaponsStatic
+    - SLEPracticeStatic
+    - SLEAmmoStatic
     - NFMercenaryMagazineStatic
     - NFMercenaryStorageStatic
-    - NfsdToolsStatic
-    - NfsdTargetsStatic
-    - NfsdBoardsStatic
+    - SLEToolsStatic
+    - SLETargetsStatic
+    - SLEBoardsStatic
+    - NFPaperAndPaperAccessories
+    - SLEReportingStatic
   - type: BlueprintReceiver
     whitelist:
       tags:
       - NFBlueprintNfsdTechfab
+      - NFBlueprintAdvanced
   - type: OreSiloClient

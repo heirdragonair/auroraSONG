@@ -33,7 +33,9 @@ using Content.Shared.Verbs;
 using Robust.Shared.Collections;
 using Content.Shared.Ghost.Roles.Components;
 using Content.Shared.Roles.Jobs;
+using Content.Shared.Silicons.StationAi; // AS
 using Content.Server._NF.Players.GhostRole.Events; // Frontier
+using Content.Shared._Impstation.NotifierExamine;//imp
 
 namespace Content.Server.Ghost.Roles;
 
@@ -535,6 +537,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         DebugTools.AssertNotNull(player.ContentData());
 
+        EnsureComp<NotifierExamineComponent>(mob); //imp add
         // After taking a ghost role, the player cannot return to the original body, so wipe the player's current mind
         // unless it is a visiting mind
         if(_mindSystem.TryGetMind(player.UserId, out _, out var mind) && !mind.IsVisitingEntity)
@@ -654,6 +657,9 @@ public sealed class GhostRoleSystem : EntitySystem
 
         // Avoid re-registering it for duplicate entries and potential exceptions.
         if (!ghostRole.ReregisterOnGhost || component.LifeStage > ComponentLifeStage.Running)
+            return;
+
+        if (TryComp<StationAiHeldComponent>(uid, out var held) && held.CurrentConnectedEntity != null) // AS: Don't re-register an AI thats remoting into a borg
             return;
 
         ghostRole.Taken = false;
@@ -849,6 +855,11 @@ public sealed class GhostRoleSystem : EntitySystem
         }
 
         SetMode(entity.Owner, ghostRoleProto, ghostRoleProto.Name, entity.Comp);
+    }
+    public void ReRegisterGhostRole(EntityUid uid, GhostRoleComponent component) // AS: Workaround for ghosting AI's that are connected to a borg
+    {
+        component.Taken = false;
+        RegisterGhostRole((uid, component));
     }
 }
 
