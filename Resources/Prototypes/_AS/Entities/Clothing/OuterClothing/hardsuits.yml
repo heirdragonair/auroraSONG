@@ -1343,7 +1343,7 @@
   name: shedu hardsuit
   suffix: Aurora, NPC
   id: ASClothingOuterHardsuitSheduUnremoveable
-  # categories: [ HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
 
@@ -1352,7 +1352,7 @@
   name: hauberk hardsuit
   suffix: Aurora, NPC
   id: ASClothingOuterHardsuitHauberkUnremoveable
-  # categories: [ HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
 
@@ -1361,7 +1361,7 @@
   name: golem hardsuit
   suffix: Aurora, NPC
   id: ASClothingOuterHardsuitGolemUnremoveable
-  # categories: [ HideSpawnMenu ]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
 

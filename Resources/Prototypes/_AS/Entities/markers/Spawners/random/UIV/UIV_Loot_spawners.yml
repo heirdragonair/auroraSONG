@@ -94,7 +94,6 @@
   id: SpawnDungeonLootNanoTrasenUIVSuitTable
   table: !type:GroupSelector
     children:
-    # 95% chance for the loot tables, lower chance for weapons
     - !type:GroupSelector
       weight: 99.9
       children:
@@ -118,7 +117,6 @@
   id: SpawnDungeonLootNanoTrasenUIVSuitTableT2
   table: !type:GroupSelector
     children:
-    # 95% chance for the loot tables, lower chance for weapons
     - !type:GroupSelector
       weight: 99.9
       children:
@@ -139,7 +137,6 @@
   id: SpawnDungeonLootNanoTrasenUIVSuitTableT3
   table: !type:GroupSelector
     children:
-    # 95% chance for the loot tables, lower chance for weapons
     - !type:GroupSelector
       weight: 99.9
       children:
@@ -169,7 +166,7 @@
     - sprite: Clothing/Uniforms/Jumpsuit/security.rsi
       state: icon
     - sprite: Effects/crayondecals.rsi
-      state: 4
+      state: North
       color: red
   - type: EntityTableSpawner
     offset: 0.0
@@ -186,7 +183,7 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT2
-      prob: 0.5
+      prob: 1
 
 - type: entity
   parent: DungeonLootNanoTrasenUIVSpawner
@@ -197,4 +194,15 @@
     offset: 0.0
     table: !type:NestedSelector
       tableId: SpawnDungeonLootNanoTrasenUIVSuitTableT3
+      prob: 1
+
+- type: entity
+  parent: DungeonLootNanoTrasenUIVSpawner
+  id: DungeonLootNanoTrasenUIVGunsSpawner
+  suffix: UIV, Gun Safes
+  components:
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVGunSafes
       prob: 1

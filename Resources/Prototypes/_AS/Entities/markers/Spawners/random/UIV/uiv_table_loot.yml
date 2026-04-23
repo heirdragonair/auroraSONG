@@ -66,19 +66,23 @@
        - id: SpawnDungeonLootMeleeT5
 
 # region - NT UIV spawners
+# NT suit tables
 - type: entityTable
   id: DungeonLootNanoTrasenUIVSuitCommon
   table: !type:GroupSelector
     children:
     - !type:GroupSelector
-      weight: 50
+      weight: 25
       children:
-        - id: ClothingOuterHardsuitEVA
-        - id: ClothingOuterHardsuitPilot
+        - id: SuitStorageUIVNTEmpty
+    - !type:GroupSelector
+      weight: 25
+      children:
+        - id: SuitStorageUIVNTGeneric
     - !type:GroupSelector
       weight: 48
       children:
-        - id: ASClothingOuterHardsuitConstable
+        - id: SuitStorageUIVNTConstable
     - !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVSuitUncommon
       weight: 2
@@ -90,12 +94,12 @@
     - !type:GroupSelector
       weight: 50
       children:
-        - id: ASClothingOuterHardsuitConstable
-        - id: ASClothingOuterHardsuitShedu
+        - id: SuitStorageUIVNTConstable
+        - id: SuitStorageUIVNTShedu
     - !type:GroupSelector
       weight: 23
       children:
-        - id: ASClothingOuterHardsuitHauberk
+        - id: SuitStorageUIVNTHauberk
     - !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVSuitRare
       weight: 2
@@ -107,11 +111,11 @@
     - !type:GroupSelector
       weight: 50
       children:
-        - id: ASClothingOuterHardsuitHauberk
+        - id: SuitStorageUIVNTHauberk
     - !type:GroupSelector
       weight: 24.9
       children:
-        - id: ASClothingOuterHardsuitGolem
+        - id: SuitStorageUIVNTGolem
     - !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVSuitMythical
       weight: 0.1
@@ -123,5 +127,17 @@
     - !type:GroupSelector
       weight: 100
       children:
-        - id: ASClothingOuterHardsuitSatanus
+        - id: SuitStorageUIVNTSatanus
 
+# NT UIV gun safes
+- type: entityTable
+  id: DungeonLootNanoTrasenUIVGunSafes
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 100
+      children:
+        - id: ASGunSafeExpeditionWT550
+        - id: ASGunSafeExpeditionLecter
+        - id: ASGunSafeExpeditionDrozd
+        - id: ASGunSafeExpeditionMK58
