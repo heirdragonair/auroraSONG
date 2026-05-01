@@ -19,6 +19,8 @@ gun-examine-caliber-12g = 12g shotgun shells
 gun-examine-caliber-25 = .25 rifle ammo
 gun-examine-caliber-20 = .20 rifle ammo
 gun-examine-caliber-30 = .30 rifle ammo
+# Aurora's Song | insert .30 long rifle caliber examine
+gun-examine-caliber-30-long = .30 long rifle ammo
 gun-examine-caliber-60 = .60 rifle ammo
 gun-examine-caliber-asmgt = .35 pistol / .20 rifle / .25 rifle / .30 rifle ammo
 gun-examine-caliber-foam = foam darts

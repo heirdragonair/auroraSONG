@@ -38,6 +38,15 @@
 #region .30 rifle
 - type: Tag
   id: ASMagazineMarksmanRifle30
+#region .30 long rifle
+- type: Tag
+  id: ASCartridgeRifle30Long
+
+- type: Tag
+  id: ASMagazineEnblocRifle30Long
+
+- type: Tag
+  id: ASSpeedLoaderRifle30Long
 
 #region .40 pistol
 - type: Tag
