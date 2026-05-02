@@ -43,6 +43,54 @@
     containers:
       cell_slot: !type:ContainerSlot
 
+- type: entity
+  id: ASBaseWeaponEnergyPistolFireModesMagnum
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mode-disabler
+      map: [ "Firemode" ]
+      shader: unshaded
+    - state: mag-unshaded-4
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: Battery
+    maxCharge: 1005
+    startingCharge: 1005
+  - type: BatteryAmmoProvider
+    proto: NFBulletDisabler
+    fireCost: 50
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    soundEmpty:
+      path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
+  - type: EnergyGun
+    fireModes:
+    - proto: NFBulletDisabler
+      fireCost: 50
+      name: disabling
+      state: disabler
+    - proto: BulletEnergyGunMagnum
+      fireCost: 100
+      name: lethal
+      state: lethal
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.EnergyGunFireModeVisuals.State:
+        Firemode:
+          Disabler: { state: mode-disabler }
+          Lethal: { state: mode-lethal }
+
+
 # region - battery rifle frames | Aurora Song
 - type: entity
   id: ASBaseWeaponFrameBatteryRifle
@@ -153,6 +201,52 @@
   - type: NFWeaponDetails
     manufacturer: weapon-details-manufacturer-dual-optics
 
+- type: entity
+  id: ASBaseWeaponFrameEnergyPistolHighCap
+  parent: [ NFBaseWeaponEncumbrancePistol, BaseWeaponBatterySmall ]
+  suffix: Aurora's Song
+  abstract: true
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: Gun
+    projectileSpeed: 30
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: Battery
+    maxCharge: 1005
+    startingCharge: 1005
+  - type: BatterySelfRecharger # 20 seconds to fully recharge, but it does not do so if it has been fired in the last 5 seconds.
+    autoRechargeRate: 50
+    autoRechargePauseTime: 5
+  - type: StaticPrice
+    price: 1000
+  - type: NFWeaponDetails
+    class: weapon-details-class-pistol
+
+- type: entity
+  id: ASBaseWeaponManufacturerNanoTrasen
+  abstract: true
+  components:
+  - type: Gun
+    minAngle: 3.5
+    maxAngle: 7
+    angleIncrease: 0.25
+    angleDecay: 1
+    fireRate: 3.5 # fire rate tweak | Aurora
+  - type: NFWeaponDetails
+    manufacturer: weapon-details-manufacturer-nanotrasen-munitions
 
 # region - battery rifles | Aurora Song
 - type: entity
@@ -280,3 +374,28 @@
     magState: mag
     steps: 5
     zeroVisible: true
+
+- type: entity
+  name: EG-4 energy magnum
+  parent: [ ASBaseWeaponFrameEnergyPistolHighCap, ASBaseWeaponEnergyPistolFireModesMagnum, BaseC2ContrabandUnredeemable, ASBaseWeaponManufacturerNanoTrasen ]
+  id: ASWeaponEG4EnergyMagnum
+  description: An advanced energy pistol with a rotating staged power system that allows for shots that are both high power and rapid fire.
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mode-disabler
+      shader: unshaded
+      map: [ "Firemode" ]
+    - state: mag-unshaded-4
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+    - suitStorage
+    - Back
+    sprite: _Goobstation/Objects/Weapons/Guns/Battery/erevolver.rsi
