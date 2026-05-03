@@ -160,10 +160,17 @@
   id: DungeonLootNanoTrasenUIVArmoryClutterAll
   table: !type:GroupSelector
     children:
-    - id: ClothingBeltSheath
-    - id: ClothingBeltKatanaSheathSingle
-    - !type:NesteSelector
+    - !type:GroupSelector
+      weight: 30
+      children:
+      - id: ClothingBeltSheath
+      - id: ClothingBeltKatanaSheathSingle
+    - !type:NestedSelector
+      weight: 25
       tableId: DungeonLootNanoTrasenUIVArmoryClutterWeapons
+    - !type:NestedSelector
+      weight: 35
+      tableId: DungeonLootNanoTrasenUIVArmoryClutterClothing
 
 - type: entityTable
   id: DungeonLootNanoTrasenUIVArmoryClutterWeapons
@@ -181,6 +188,18 @@
   table: !type:GroupSelector
     children:
     - id: ClothingUniformJumpsuitSec
+    - id: ClothingUniformJumpsuitSecFormal
+    - id: ClothingOuterCoatWarden
+    - id: ClothingOuterCoatHoSTrench
+    - id: ClothingOuterCoatDetective
+    - id: ClothingOuterWinterWarden
+    - id: ClothingOuterWinterWardenUnarmored
+    - id: ClothingHeadHatWarden
+    - id: ClothingHeadHatBeretWarden
+    - id: ClothingHeadHatHoshat
+    - id: ClothingHeadHatBeretHoS
+    - id: ClothingNeckMantleHOS
+    - id: ClothingUniformSecurityTrooper
 
 - type: entityTable
   id: DungeonLootNanoTrasenUIVCaptain

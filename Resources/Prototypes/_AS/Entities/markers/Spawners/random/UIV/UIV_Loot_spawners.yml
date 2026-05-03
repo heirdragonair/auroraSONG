@@ -266,3 +266,66 @@
     table: !type:NestedSelector
       tableId: DungeonLootNanoTrasenUIVCaptain
       prob: 1
+
+- type: entity
+  parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVSpawnerClutterClothes
+  name: NT UIV Loot Spawner
+  suffix: CLUTTER, CLOTHES
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Clothing/OuterClothing/Coats/warden.rsi
+      state: icon
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVArmoryClutterClothing
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVSpawnerClutterWeapons
+  name: NT UIV Loot Spawner
+  suffix: CLUTTER, WEAPONS
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
+      state: icon
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVArmoryClutterWeapons
+      prob: 1
+
+- type: entity
+  parent: MarkerBase
+  id: DungeonLootNanoTrasenUIVSpawnerClutterGeneral
+  name: NT UIV Loot Spawner
+  suffix: CLUTTER, ALL
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+      scale: 0.7, 0.7
+    - sprite: Clothing/OuterClothing/Coats/warden.rsi
+      state: icon
+    - sprite: Effects/crayondecals.rsi
+      state: North
+      color: red
+  - type: EntityTableSpawner
+    offset: 0.0
+    table: !type:NestedSelector
+      tableId: DungeonLootNanoTrasenUIVArmoryClutterAll
+      prob: 1
