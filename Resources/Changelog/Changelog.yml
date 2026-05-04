@@ -4825,3 +4825,10 @@ Entries:
   id: 9441
   time: '2026-05-04T05:31:15.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1021
+- author: Swiss_Fox
+  changes:
+    - type: Add
+      message: Added the long range salv shuttle, IHS Mercury, to the normal shipyard
+  id: 9442
+  time: '2026-05-04T11:21:27.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/989
