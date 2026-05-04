@@ -99,3 +99,14 @@
     back: NanoTrasenBackpackLoot_Captain
   inhand:
   - CaptainSabre
+
+- type: startingGear
+  id: ASNanoTrasenRogueBlueShield
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSec
+    head: ClothingHeadHelmetHardsuitBlueshield
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackCombatChester
+    outerClothing: ASClothingOuterHardsuitGargoyleUnremoveable
+    belt: ClothingBeltBSOWebbing
+    back: NanoTrasenBackpackLoot_Blueshield

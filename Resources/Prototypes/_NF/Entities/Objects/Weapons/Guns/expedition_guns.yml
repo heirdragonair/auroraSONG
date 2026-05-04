@@ -365,6 +365,13 @@
   categories: [ HideSpawnMenu ]
   id: NFWeaponSubMachineGunWt550Expedition
 
+- type: entity # Aurora's Song | BSO Wt550 with proper contraband components
+  parent:
+  - BaseExpeditionWeaponTier3NanoTrasen
+  - WeaponSubMachineGunWt550BSO
+  categories: [ HideSpawnMenu ]
+  id: WeaponSubMachineGunWt550BSOExpedition
+
 - type: entity
   parent:
   - BaseExpeditionWeaponTier3
@@ -402,6 +409,13 @@
   - NFWeaponShotgunBulldog
   categories: [ HideSpawnMenu ]
   id: NFWeaponShotgunBulldogExpedition
+
+- type: entity # Aurora's Song | Lever action shotgun with NT branding, 8 gauge.
+  parent:
+  - BaseExpeditionWeaponTier4NanoTrasen
+  - ASWeaponShotgunLeverChester
+  categories: [ HideSpawnMenu ]
+  id: ASWeaponShotgunLeverChesterExpedition
 
 ## Rifles
 - type: entity

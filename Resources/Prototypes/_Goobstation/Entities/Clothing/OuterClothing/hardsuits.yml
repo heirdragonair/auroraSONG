@@ -11,7 +11,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitSecurity] #TheDen Contraband Parents
   id: ClothingOuterHardsuitBlueshield
-  name: blueshield's hardsuit
+  name: gargoyle hardsuit # Aurora's Song | renamed in line with other NT hardsuits
   description: A special security hardsuit made for the Blueshield Officer, has extra armor yet somehow feels lighter.
   components:
   - type: Sprite

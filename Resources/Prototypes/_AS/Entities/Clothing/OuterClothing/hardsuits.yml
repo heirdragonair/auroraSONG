@@ -1366,6 +1366,15 @@
   - type: Unremoveable
 
 - type: entity
+  parent: [ClothingOuterHardsuitBlueshield, ContrabandClothing]
+  name: gargoyle hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitGargoyleUnremoveable
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+
+- type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander ] #Possibly could be BaseC2ContrabandUnredeemable
   id: ClothingOuterHardsuitCallisto
   name: callisto hardsuit

@@ -289,7 +289,7 @@
   name: NT Field Captain
   parent: [ MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged ]
   id: MobNTFieldCaptain
-  description: The head of security, in charge of combat operations and team coordination.
+  description: The head of operations, the commander, the boss. And they're packing heat.
   categories: [ HideSpawnMenu ]
   components:
   - type: Inventory
@@ -316,3 +316,36 @@
     SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+
+- type: entity
+  name: NT Blueshield
+  parent: [MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged]
+  id: MobNTBlueshield
+  description: A rogue blueshield, someone's about to have a bad day.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueBlueShield
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierMed # Slightly tougher modifiers
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2.2
+    rechargeSound:
+      path: /Audio/Weapons/Guns/Cock/batrifle_cock.ogg
+  - type: BasicEntityAmmoProvider
+    proto: AS8gShellBuckshot
+    capacity: 5
+    count: 5
+  - type: Gun
+    showExamineText: false
+    fireRate: 0.7
+    minAngle: 6.8
+    maxAngle: 26
+    angleIncrease: 2.5
+    angleDecay: 3
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg

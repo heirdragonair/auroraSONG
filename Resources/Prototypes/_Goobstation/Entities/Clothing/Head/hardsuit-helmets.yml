@@ -10,7 +10,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitBlueshield
-  name: blueshield's hardsuit helmet
+  name: gargoyle hardsuit helmet # Aurora's Song | renamed in line with other NT hardsuits
   description: Blueshield hardsuit with a top of the line gunlink. Belongs to the Blueshield.
   categories: [ HideSpawnMenu ] # TheDen - Removes from spawn menu
   components:
