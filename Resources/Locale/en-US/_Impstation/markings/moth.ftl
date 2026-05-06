@@ -211,9 +211,11 @@ marking-LunaWings-luna1 = Wings
 marking-LunaWings-luna2 = Spots
 
 marking-MothBee = Wings (Bumblebee)
-marking-MothBee-bee1 = Outer stripes
+# Frontier: stripes < Stripes
+marking-MothBee-bee1 = Outer Stripes
 marking-MothBee-bee2 = Wings
-marking-MothBee-bee3 = Inner stripe
+# Frontier: stripe < Stripe
+marking-MothBee-bee3 = Inner Stripe
 
 marking-MothBeetleTail = Wings (Junebug)
 marking-MothBeetleTail-beetle1 = Outline
