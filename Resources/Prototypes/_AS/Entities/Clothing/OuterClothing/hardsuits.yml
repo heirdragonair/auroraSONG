@@ -1375,6 +1375,15 @@
   - type: Unremoveable
 
 - type: entity
+  parent: [ASClothingOuterHardsuitSatanus, ContrabandClothing]
+  name: damaged satanus hardsuit
+  suffix: Aurora, NPC
+  id: ASClothingOuterHardsuitSatanusUnremoveable
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+
+- type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander ] #Possibly could be BaseC2ContrabandUnredeemable
   id: ClothingOuterHardsuitCallisto
   name: callisto hardsuit

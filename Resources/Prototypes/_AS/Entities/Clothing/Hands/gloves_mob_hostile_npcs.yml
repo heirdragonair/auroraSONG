@@ -179,3 +179,25 @@
         color: "#535353"
       - sprite: _Goobstation/Objects/Weapons/Guns/Lever/chester.rsi
         state: inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlackSMG
+  id: ClothingHandsGlovesColorBlackCombatPulseRifle
+  name: combat gloves
+  suffix: combat
+  description: Some gloves with reinforced knuckles and a sleek design, perfect for combat situations.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/Color/color.rsi
+    layers:
+    - state: icon
+    color: "#535353"
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/Color/color.rsi
+        state: equipped-HAND
+        color: "#535353"
+      - sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+        state: inhand-left

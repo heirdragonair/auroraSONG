@@ -304,7 +304,7 @@
     fireCost: 60
   - type: BatterySelfRecharger # 20 seconds to fully recharge, but it does not do so if it has been fired in the last 5 seconds.
     autoRechargeRate: 50
-  - type: Battery # 20 shots
+  - type: Battery
     maxCharge: 300
     startingCharge: 300
   - type: Gun
@@ -312,7 +312,7 @@
     maxAngle: 7
     angleIncrease: 0.25
     angleDecay: 1
-    fireRate: 3.5 # fire rate tweak | Aurora
+    fireRate: 1.5 # Pulse rapid fire is a HORROR
     SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
@@ -349,3 +349,35 @@
     SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/shotgun.ogg
+
+- type: entity
+  name: Rogue DS-Commando
+  parent: [ MobMovementSpeedModifierRanged, MobStaminaFodder, MobHostileNTBase, MobHumanoidHostileAISimpleRanged ]
+  id: MobNTDeathSquad
+  description: The mask of capitalism has slipped, and it the beast is here to kill everything you love.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Inventory
+    templateId: human
+  - type: Loadout
+    prototypes:
+    - ASNanoTrasenRogueDeathSquad
+  - type: Damageable
+    damageModifierSet: MobHostileNanoTrasenDamageModifierHard # Slightly tougher modifiers
+  - type: BatteryAmmoProvider # Aurora's Song - HitscanBatteryAmmoProvider>BatteryAmmoProvider
+    proto: NFPulse
+    fireCost: 60
+  - type: BatterySelfRecharger
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 300
+    startingCharge: 300
+  - type: Gun
+    minAngle: 3.5
+    maxAngle: 7
+    angleIncrease: 0.25
+    angleDecay: 1
+    fireRate: 2.5 # Pulse rapid fire is a HORROR
+    SelectedMode: SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg

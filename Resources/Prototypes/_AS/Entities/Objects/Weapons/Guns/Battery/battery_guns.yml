@@ -145,6 +145,25 @@
   - type: NFWeaponDetails
     manufacturer: weapon-details-manufacturer-dual-optics
 
+- type: entity
+  id: ASBaseWeaponFramePulseRifle
+  parent: [ NFBaseWeaponEncumbranceRifle, BaseWeaponBattery ]
+  abstract: true
+  components:
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Gun
+    fireRate: 1.5
+  - type: BatteryAmmoProvider
+    proto: NFPulse
+    fireCost: 100
+  - type: Battery
+    maxCharge: 3000 # 30 shots of 25 heat is already strong as fuck, no way am I giving this the 40'000 of upstream
+    startingCharge: 3000
+
+
 # endregion - battery rifle frames | Aurora Song
 
 # region - battery pistol frames | Aurora Song
@@ -244,7 +263,7 @@
     maxAngle: 7
     angleIncrease: 0.25
     angleDecay: 1
-    fireRate: 3.5 # fire rate tweak | Aurora
+    fireRate: 3.5
   - type: NFWeaponDetails
     manufacturer: weapon-details-manufacturer-nanotrasen-munitions
 
@@ -347,6 +366,35 @@
     price: 260
   - type: BatterySelfRecharger # Recharges 1 shot per 1 seconds
     autoRechargeRate: 25
+
+- type: entity
+  name: Mk.1 UE pulse rifle
+  parent: [ ASBaseWeaponFramePulseRifle, BaseC3Contraband, ASBaseWeaponManufacturerNanoTrasen ]
+  description: the MK.1 "Unit-Expeditionary" pulse rifle is a limited production run from NanoTrasen, designed for commando units targeting HVTs in high-risk environments.
+  id: ASWeaponMk1UEPulseRifle
+  components:
+  - type: Wieldable
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -1.2
+    maxAngle: -4.3
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,4,1
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-4
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: Appearance
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+  - type: StaticPrice
+    price: 10000
 
 # endregion - battery rifles | Aurora Song
 # region - battery pistols | Aurora Song

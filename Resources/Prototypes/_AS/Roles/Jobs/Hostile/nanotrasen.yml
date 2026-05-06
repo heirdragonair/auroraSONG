@@ -110,3 +110,14 @@
     outerClothing: ASClothingOuterHardsuitGargoyleUnremoveable
     belt: ClothingBeltBSOWebbing
     back: NanoTrasenBackpackLoot_Blueshield
+
+- type: startingGear
+  id: ASNanoTrasenRogueDeathSquad
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDeathSquad
+    head: ASClothingHeadHelmetHardsuitSatanus
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesColorBlackCombatPulseRifle
+    outerClothing: ASClothingOuterHardsuitSatanusUnremoveable
+    belt: ClothingBeltSecurity
+    back: NanoTrasenBackpackLoot_DeathSquad

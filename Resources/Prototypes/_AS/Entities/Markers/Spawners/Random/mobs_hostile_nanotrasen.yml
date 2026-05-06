@@ -167,3 +167,27 @@
   - type: RandomSpawner
     prototypes:
     - MobNTBlueshield
+
+- type: entity
+  name: Nanotrasen DS Spawner
+  id: ASSpawnMobNanotrasenCommando
+  parent: MarkerBase
+  suffix: AI, HOSTILE
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - state: ai
+        - sprite: _NF/Mobs/Species/Templates/human.rsi
+          state: human
+        - sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
+          state: equipped-INNERCLOTHING
+        - sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
+          state: equipped-OUTERCLOTHING
+        - sprite: Clothing/Head/Hardsuits/deathsquad.rsi
+          state: equipped-HELMET
+        - sprite: Clothing/Shoes/Boots/captainjumpboots.rsi
+          state: equipped-FEET
+    - type: RandomSpawner
+      prototypes:
+        - MobNTDeathSquad
