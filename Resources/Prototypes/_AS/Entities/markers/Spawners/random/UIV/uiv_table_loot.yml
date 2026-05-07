@@ -202,6 +202,18 @@
     - id: ClothingUniformSecurityTrooper
 
 - type: entityTable
+  id: DungeonLootNanoTrasenCentCommClutterClothing
+  table: !type:GroupSelector
+    children:
+    - id: ClothingHeadHatCentcomcap
+    - id: ClothingHeadHatCentcom
+    - id: ClothingUniformJumpsuitCentcomAgent
+    - id: ClothingUniformJumpsuitCentcomFormal
+    - id: ClothingUniformJumpskirtCentcomFormalDress
+    - id: ClothingUniformJumpsuitCentcomOfficer
+    - id: ClothingUniformJumpsuitCentcomOfficial
+
+- type: entityTable
   id: DungeonLootNanoTrasenUIVCaptain
   table: !type:GroupSelector
     children:
