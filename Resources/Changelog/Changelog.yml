@@ -4973,3 +4973,10 @@ Entries:
   id: 9459
   time: '2026-05-08T12:51:25.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1032
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: Fixed command access configurators not configuring accesses.
+  id: 9460
+  time: '2026-05-08T12:54:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1031
