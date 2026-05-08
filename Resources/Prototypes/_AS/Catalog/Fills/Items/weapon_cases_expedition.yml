@@ -107,3 +107,18 @@
           amount: 2
         - id: ASBlueprintShotgun8gMunitions
           amount: 1
+
+- type: entity
+  parent: WeaponCaseLong
+  id: WeaponCaseLongHushpupExpeditionT4
+  suffix: Dungeon, Hushpup
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill # Aurora's Song - StorageFill>EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ASWeaponShotgunHushpup
+          amount: 1
+        - id: NFAmmunitionBoxShellShotgunBuckshot
+          amount: 2
