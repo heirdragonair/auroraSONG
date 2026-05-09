@@ -219,7 +219,7 @@
     - back
   - type: SpawnItemsOnUse
     items:
-    - id: ASWeaponShotgunLeverChesterExpedition
+    - id: WeaponCaseChesterExpeditionT4
       orGroup: gun
     - id: WeaponSubMachineGunWt550BSOExpedition
       orGroup: gun
