@@ -39,6 +39,10 @@
   id: MobAvali
   name: Urist McRaptor
   components:
+  - type: MovementSpeedModifier # Aurora's Song - Added to put in line with other winged species speed in space.
+#    baseWalkSpeed: 2.5 # Frontier
+#    baseSprintSpeed: 5.0 # Frontier
+    weightlessAcceleration: 2.5
   - type: Speech
     speechVerb: Parrot
     speechSounds: MaleAvali
