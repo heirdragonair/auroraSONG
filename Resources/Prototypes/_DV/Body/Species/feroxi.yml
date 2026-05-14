@@ -51,8 +51,6 @@
   - BaseSpeciesMobOrganic
   id: BaseMobFeroxi
   name: Urist McFin
-  save: false
-  abstract: true
   components:
   - type: Inventory
     speciesId: feroxi
