@@ -192,7 +192,7 @@
       scaleModifier: 4
 
 - type: entity
-  parent: [ OrganBaseLiver, OrganHumanInternal, OrganFairy, OrganFairyMetabolizer ]
+  parent: [ OrganBaseLiver, OrganFairy, OrganHumanInternal, OrganFairyMetabolizer ]
   id: OrganFairyLiver
   components:
   - type: Metabolizer
@@ -202,6 +202,6 @@
       rateModifier: 0.1 # removes alcohol very slowly along with the stomach removing it as a drink
 
 - type: entity
-  parent: [ OrganBaseKidneys, OrganHumanInternal, OrganFairy, OrganAnimalMetabolizer ]
+  parent: [ OrganBaseKidneys, OrganFairy, OrganHumanInternal, OrganAnimalMetabolizer ]
   id: OrganFairyKidneys
   # Note for future reader, the kidneys now properly handle unhandled chems, the rest get digested in the heart
