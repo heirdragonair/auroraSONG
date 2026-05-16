@@ -33,6 +33,7 @@
   - type: HumanoidAppearance
     species: Arachnid
     hideLayersOnEquip: # Aurora's Song - Hide your dang fangs
+    - Hair # imp
     - Snout
     - HeadTop
     - HeadSide
