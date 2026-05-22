@@ -14,6 +14,11 @@
   parent: BriefcaseBrown
   suffix: Syndicate, Sniper Bundle
   components:
+  # Aurora's Song Start - Make this one bigger for fills
+  - type: Storage
+    grid:
+    - 0,0,6,3
+  # Aurora's Song End
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
@@ -60,7 +65,7 @@
 
 - type: entity
   id: BriefcaseWeaponHushpupFilled
-  parent: BriefcaseWeaponSmall
+  parent: BriefcaseWeapon # Aurora's Song BriefcaseWeaponSmall>BriefcaseWeapon
   name: secure hushpup case
   components:
   - type: EntityTableContainerFill
@@ -82,7 +87,7 @@
 
 - type: entity
   id: BriefcaseWeaponBulldogFilled
-  parent: BriefcaseWeaponSmall
+  parent: BriefcaseWeapon # Aurora's Song BriefcaseWeaponSmall>BriefcaseWeapon
   name: secure bulldog case
   components:
   - type: EntityTableContainerFill
