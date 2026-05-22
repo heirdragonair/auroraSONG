@@ -1,5 +1,6 @@
 # floors
 ent-FloorTileItemCarpetRed = carpet
+stack-FloorTileCarpetRed = carpet
 
 tile-FloorMS13CarpetBlue = blue carpet
 tile-FloorMS13CarpetFancyBlue = fancy blue carpet
@@ -42,60 +43,79 @@ tile-FloorDirtIndoors= dirt indoors
 
 ent-FloorTileItemMetalBlue = metal floor blue
 tile-FloorMetalBlue = metal floor blue
+stack-FloorTileMetalBlue = metal floor blue
 
 ent-FloorTileItemMetalBlueSolid = metal floor solid blue
 tile-FloorMetalBlueSolid = metal floor solid blue
+stack-FloorTileMetalBlueSolid = metal floor solid blue
 
 ent-FloorTileItemMetalGreen = metal floor green
 tile-FloorMetalGreen = metal floor green
+stack-FloorTileMetalGreen = metal floor green
 
 ent-FloorTileItemMetalGreenSolid = metal floor green solid
 tile-FloorMetalGreenSolid = metal floor green solid
+stack-FloorTileMetalGreenSolid = metal floor green solid
 
 ent-FloorTileItemMetalGrey = metal floor grey
 tile-FloorMetalGrey = metal floor grey
+stack-FloorTileMetalGrey = metal floor grey
 
 ent-FloorTileItemMetalGreySolid = metal floor grey solid
 tile-FloorMetalGreySolid = metal floor grey solid
+stack-FloorTileMetalGreySolid = metal floor grey solid
 
 ent-FloorTileItemMetalGreyDark = metal floor grey dark
 tile-FloorMetalGreyDark = metal floor grey dark
+stack-FloorTileMetalGreyDark = metal floor grey dark
 
 ent-FloorTileItemMetalGreyDarkSolid = metal floor grey dark solid
 tile-FloorMetalGreyDarkSolid = metal floor grey dark solid
+stack-FloorTileMetalGreyDarkSolid = metal floor grey dark solid
 
 ent-FloorTileItemMetalPurple = metal floor purple
 tile-FloorMetalPurple = metal floor purple
+stack-FloorTileMetalPurple = metal floor purple
 
 ent-FloorTileItemMetalPurpleSolid = metal floor purple solid
 tile-FloorMetalPurpleSolid = metal floor purple solid
+stack-FloorTileMetalPurpleSolid = metal floor purple solid
 
 ent-FloorTileItemMetalRed = metal floor red
 tile-FloorMetalRed = metal floor red
+stack-FloorTileMetalRed = metal floor red
 
 ent-FloorTileItemMetalRedSolid = metal floor red solid
 tile-FloorMetalRedSolid = metal floor red solid
+stack-FloorTileMetalRedSolid = metal floor red solid
 
 ent-FloorTileItemMetalTeal = metal floor teal
 tile-FloorMetalTeal = metal floor teal
+stack-FloorTileMetalTeal = metal floor teal
 
 ent-FloorTileItemMetalTealSolid = metal floor teal solid
 tile-FloorMetalTealSolid = FloorMetalTealSolid
+stack-FloorTileMetalTealSolid = metal floor teal solid
 
 ent-FloorTileItemMetalWhite = metal floor white
 tile-FloorMetalWhite = metal floor white
+stack-FloorTileMetalWhite = metal floor white
 
 ent-FloorTileItemMetalWhiteSolid = metal floor white solid
 tile-FloorMetalWhiteSolid = metal floor white solid
+stack-FloorTileMetalWhiteSolid = metal floor white solid
 
 ent-FloorTileItemMetalYellow = metal floor yellow
 tile-FloorMetalYellow = metal floor yellow
+stack-FloorTileMetalYellow = metal floor yellow
 
 ent-FloorTileItemMetalYellowSolid = metal floor yellow solid
 tile-FloorMetalYellowSolid = metal floor yellow solid
+stack-FloorTileMetalYellowSolid = metal floor yellow solid
 
 ent-FloorTileItemMetalFreezer = freezer
 tile-FloorMetalFreezer = freezer
+stack-FloorTileMetalFreezer = freezer
 
 tile-N14FloorRoadBottom = road bottom
 tile-N14FloorRoadCorner1 = road corner one
@@ -175,21 +195,27 @@ tile-N14Plating = wasteland
 
 ent-FloorTileItemWoodHouse = house wood floor
 tile-FloorWoodHouse = house wood floor
+stack-FloorTileWoodHouse = house wood floor
 
 ent-FloorTileItemWoodMaple = maple wood floor
 tile-FloorWoodMaple = maple wood floor
+stack-FloorTileWoodMaple = maple wood floor
 
 ent-FloorTileItemMetalIndustrial = industrial floor
 tile-FloorMS13MetalIndustrial = industrial floor
+stack-FloorTileMetalIndustrial = industrial floor
 
 ent-FloorTileItemMetalMS13 = metal tile floor
 tile-FloorMS13MetalTile = metal tile floor
+stack-FloorTileMetalMS13 = metal tile floor
 
 ent-FloorTileItemMetalGrate = metal grate floor
 tile-FloorMS13MetalGrate = metal grate floor
+stack-FloorTileMetalGrate = metal greate floor
 
 ent-FloorTileItemMetalSolid = metal solid floor
 tile-FloorMS13MetalSolid = metal solid floor
+stack-FloorTileMetalSolid = metal solid floor
 
 tile-FloorMS13WoodCommon= wood floor
 
@@ -209,6 +235,8 @@ tile-FloorMS13WoodMosaicDamaged = damaged mosaic wood floor
 
 ent-FloorTileItemWoodOak = oak floor
 tile-FloorWoodOak = oak floor
+stack-FloorTileWoodOak = oeak floor
+
 tile-FloorWoodOakBroken = broken oak floor
 
 tile-FloorMS13WoodWide = wide wood floor
