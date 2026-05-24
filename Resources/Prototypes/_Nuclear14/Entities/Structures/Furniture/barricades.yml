@@ -137,8 +137,9 @@
   - type: Slippery
     slipSound:
       path: /Audio/Effects/fence_rattle1.ogg
-    launchForwardsMultiplier: .25 # Aurora's Song | 0 > .25
-    paralyzeTime: .25 # Aurora's Song | 0 > .25
+    slipData:                       # Aurora's Song - Add slipData
+      launchForwardsMultiplier: .25 # Aurora's Song - 0 > .25
+      stunTime: .25                 # Aurora's Song - 0 > .25
 
 - type: entity
   parent: N14BarricadeSandbagSingle

@@ -5,7 +5,7 @@
   startNode: start
   targetNode: WallTorch
   category: construction-category-utilities
-  icon: { sprite: _Nuclear14/Structures/Decoration/torches.rsi, state: wall_torch_unlit }
+  # icon: { sprite: _Nuclear14/Structures/Decoration/torches.rsi, state: wall_torch_unlit } - Aurora's Song
   objectType: Structure
   placementMode: SnapgridCenter
   hide: false
