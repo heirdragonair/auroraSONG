@@ -297,7 +297,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+      # - FloorWasteland # Aurora's Song| This floor tile isn't real.
       - FloorWoodOak
   - type: Stack
     stackType: FloorTileWoodOak
@@ -315,7 +315,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song | This floor tile isn't real.
       - FloorWoodHouse
   - type: Stack
     stackType: FloorTileWoodHouse
@@ -333,7 +333,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song | This floor tile isn't real.
       - FloorWoodMaple
   - type: Stack
     stackType: FloorTileWoodMaple
@@ -351,7 +351,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song | This floor tile isn't real.
       - FloorMS13MetalIndustrial
   - type: Stack
     stackType: FloorTileMetalIndustrial
@@ -366,7 +366,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song| This floor tile isn't real.
       - FloorMS13MetalTile
   - type: Stack
     stackType: FloorTileMetalMS13
@@ -381,7 +381,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song| This floor tile isn't real.
       - FloorMS13MetalGrate
   - type: Stack
     stackType: FloorTileMetalGrate
@@ -396,7 +396,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song| This floor tile isn't real.
       - FloorMS13MetalSolid
   - type: Stack
     stackType: FloorTileMetalSolid
@@ -413,7 +413,7 @@
     heldPrefix: wood
   - type: FloorTile
     outputs:
-      - #- FloorWasteland # Aurora's Song| This floor tile isn't real.
+    # - FloorWasteland # Aurora's Song| This floor tile isn't real.
       - FloorCarpetRed
   - type: Stack
     stackType: FloorTileCarpetRed

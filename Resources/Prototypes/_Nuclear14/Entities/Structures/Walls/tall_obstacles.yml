@@ -49,6 +49,7 @@
   components:
   - type: Sprite
     state: bars
+  - type: InteractionVerbs    # Aurora's Song
     allowedVerbs:
     - Rattle
 

@@ -29,6 +29,9 @@
         layer:
         - WallLayer
         density: 100
+  - type: InteractionVerbs    # Aurora's Song
+    allowedVerbs:
+    - Rattle
 
 - type: entity
   parent: N14BaseFence
@@ -54,5 +57,3 @@
   - type: IconSmooth
     key: fence
     base: fence
-    allowedVerbs:
-    - Rattle
