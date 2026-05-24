@@ -31,6 +31,7 @@ public sealed class HumanoidProfileSystem : EntitySystem
         ent.Comp.Sex = profile.Sex;
         ent.Comp.Height = profile.Appearance.Height; // Aurora's Song
         ent.Comp.Width = profile.Appearance.Width; // Aurora's Song
+        ent.Comp.CharacterConsent = profile.CharacterConsent; // Aurora's Song
         Dirty(ent);
 
         if (TryComp<GrammarComponent>(ent, out var grammar))

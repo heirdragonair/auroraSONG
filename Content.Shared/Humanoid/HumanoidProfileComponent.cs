@@ -33,4 +33,7 @@ public sealed partial class HumanoidProfileComponent : Component
     [DataField, AutoNetworkedField]
     public float Width { get; set; } = 1.0f;
 
+    // Aurora's Song
+    [DataField, AutoNetworkedField]
+    public string? CharacterConsent;
 }
