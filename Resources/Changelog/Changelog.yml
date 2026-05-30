@@ -5061,3 +5061,10 @@ Entries:
   id: 9471
   time: '2026-05-27T20:17:54.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1089
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: pirate grenades are no longer hostile to the user
+  id: 9472
+  time: '2026-05-27T03:04:33.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1091
