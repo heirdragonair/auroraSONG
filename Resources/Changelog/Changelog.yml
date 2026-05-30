@@ -5033,3 +5033,10 @@ Entries:
   id: 9467
   time: '2026-05-27T20:20:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1094
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: changing grids no longer drops people when you carry them
+  id: 9468
+  time: '2026-05-27T20:18:17.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1092
