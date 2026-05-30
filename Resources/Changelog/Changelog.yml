@@ -5293,3 +5293,10 @@ Entries:
   id: 9501
   time: '2026-05-16T01:46:28.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1052
+- author: entings
+  changes:
+    - type: Add
+      message: Impstation's remaining arachnid markings are now available for use.
+  id: 9502
+  time: '2026-05-15T23:41:51.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1037
