@@ -5183,3 +5183,14 @@ Entries:
   id: 9487
   time: '2026-05-24T02:36:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1039
+- author: ATDoop
+  changes:
+    - type: Tweak
+      message: Diona base markings are greyscale for easier coloring
+    - type: Tweak
+      message: Diona marking points have been slightly increased
+    - type: Tweak
+      message: Some diona markings can have multiple colors now
+  id: 9488
+  time: '2026-05-24T02:31:27.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1025
