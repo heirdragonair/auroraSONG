@@ -9,9 +9,8 @@
 - type: marking
   id: HumanoidAbs
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Human, Dwarf, Arachnid, Reptilian, SlimePerson, Oni, Goblin, Felinid, Sheleg, Tajaran, Feroxi, Rodentia, Harpy ] # Aurora Song edit to add Oni, Goblin, Felinid, Sheleg, Tajaran, Feroxi, Rodentia, and Harpy
-  followSkinColor: true
+  groupWhitelist: [ Human, Arachnid, Reptilian, Slime, Oni, Goblin, Felinid, Sheleg, Tajaran, Feroxi, Rodentia, Harpy ] # Aurora Song edit to add Oni, Goblin, Felinid, Sheleg, Tajaran, Feroxi, Rodentia, and Harpy
+  forcedColoring: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle2.rsi
     state: muscular

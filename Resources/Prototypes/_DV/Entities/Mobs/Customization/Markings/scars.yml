@@ -3,7 +3,7 @@
   bodyPart: Chest
   groupWhitelist: [Human, Felinid, Oni, Feroxi] #Einstein Engines - Felinid, Oni
   sexRestriction: [Female] # DeltaV: Splitting the scars and tattoos
-  followSkinColor: true
+  forcedColoring: true
   sprites:
   - sprite: _DV/Mobs/Customization/scars.rsi
     state: scar_chest_female

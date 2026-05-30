@@ -117,7 +117,6 @@
   bodyPart: Eyes
   groupWhitelist: [ Arachnid ]
   forcedColoring: true
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -132,7 +131,6 @@
   bodyPart: Eyes
   groupWhitelist: [ Arachnid ]
   forcedColoring: false
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -220,7 +218,6 @@
   bodyPart: Chest
   groupWhitelist: [ Arachnid ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: spidermirror

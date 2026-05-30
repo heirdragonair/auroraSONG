@@ -17,7 +17,6 @@
   bodyPart: Head
   groupWhitelist: [ Slime ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: fizz
@@ -27,7 +26,6 @@
   bodyPart: Chest
   groupWhitelist: [ Slime ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: bubble
@@ -37,7 +35,6 @@
   bodyPart: Chest
   groupWhitelist: [ Slime ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: fishbowl1
@@ -49,7 +46,6 @@
   bodyPart: Head
   groupWhitelist: [ Slime ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: fadingstars1
@@ -72,7 +68,6 @@
   bodyPart: Chest
   groupWhitelist: [ Diona ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dionamosschest
@@ -82,7 +77,6 @@
   bodyPart: HeadTop
   groupWhitelist: [ Diona ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dionamoonbloom
@@ -93,7 +87,6 @@
   bodyPart: Head
   groupWhitelist: [ Diona ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionabigfirefly
@@ -104,7 +97,6 @@
   bodyPart: Chest
   groupWhitelist: [ Diona ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionafirefly
@@ -115,7 +107,6 @@
   bodyPart: Head
   groupWhitelist: [ Diona ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dionapollendust
@@ -123,10 +114,8 @@
 - type: marking
   id: DwarfBearCheeks
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   forcedColoring: true
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dwarfbearcheeks
@@ -135,10 +124,8 @@
 - type: marking
   id: DwarfHeadGlow
   bodyPart: Head
-  markingCategory: Head
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   forcedColoring: true
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfheadglow
@@ -147,14 +134,12 @@
 - type: marking
   id: DwarfConstellationHead
   bodyPart: Head
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationhead
@@ -163,14 +148,12 @@
 - type: marking
   id: DwarfConstellationChest
   bodyPart: Chest
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationchest
@@ -179,14 +162,12 @@
 - type: marking
   id: DwarfConstellationLArm
   bodyPart: LArm
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationlarm
@@ -195,14 +176,12 @@
 - type: marking
   id: DwarfConstellationLHand
   bodyPart: LHand
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationlhand
@@ -211,14 +190,12 @@
 - type: marking
   id: DwarfConstellationRArm
   bodyPart: RArm
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationrarm
@@ -227,14 +204,12 @@
 - type: marking
   id: DwarfConstellationRHand
   bodyPart: RHand
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationrhand
@@ -243,14 +218,12 @@
 - type: marking
   id: DwarfConstellationLLeg
   bodyPart: LLeg
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationlleg
@@ -259,14 +232,12 @@
 - type: marking
   id: DwarfConstellationLFoot
   bodyPart: LFoot
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationlfoot
@@ -275,14 +246,12 @@
 - type: marking
   id: DwarfConstellationRLeg
   bodyPart: RLeg
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationrleg
@@ -291,14 +260,12 @@
 - type: marking
   id: DwarfConstellationRFoot
   bodyPart: RFoot
-  markingCategory: Overlay
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
         !type:SimpleColoring
         color: "#FFFFFF"
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
     state: dwarfconstellationrfoot
@@ -307,8 +274,7 @@
 - type: marking
   id: DwarfChestHair
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dwarfchesthair
@@ -316,8 +282,7 @@
 - type: marking
   id: DwarfArmHair
   bodyPart: LArm
-  markingCategory: Arms
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dwarfarmhair
@@ -325,8 +290,7 @@
 - type: marking
   id: DwarfLegHair
   bodyPart: LLeg
-  markingCategory: Legs
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: dwarfleghair
@@ -334,8 +298,7 @@
 - type: marking
   id: DwarfTattooShootingStar
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -349,8 +312,7 @@
 - type: marking
   id: DwarfMarkBear
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -364,8 +326,7 @@
 - type: marking
   id: DwarfMarkKangarooLHand
   bodyPart: LHand
-  markingCategory: Arms
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -379,8 +340,7 @@
 - type: marking
   id: DwarfMarkKangarooRHand
   bodyPart: RHand
-  markingCategory: Arms
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -394,8 +354,7 @@
 - type: marking
   id: DwarfMarkCobra
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -409,8 +368,7 @@
 - type: marking
   id: DwarfMarkSpider
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [ Dwarf ]
+  groupWhitelist: [ Human ] # Aurora's Song Dwarf>Human
   coloring:
     default:
       type:
@@ -426,7 +384,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxcocktail1
@@ -442,7 +399,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailballed
@@ -452,7 +408,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsplit
@@ -462,7 +417,6 @@
   bodyPart: Chest
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailstripes
@@ -472,7 +426,6 @@
   bodyPart: LHand
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -487,7 +440,6 @@
   bodyPart: RHand
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   coloring:
     default:
       type:
@@ -502,7 +454,6 @@
   bodyPart: Snout
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeakcolor
@@ -512,7 +463,6 @@
   bodyPart: Snout
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeaksplit1
@@ -524,7 +474,6 @@
   bodyPart: Snout
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbeaktipped
@@ -534,7 +483,6 @@
   bodyPart: Chest
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxchestplumage
@@ -544,7 +492,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootspines
@@ -554,7 +501,6 @@
   bodyPart: LFoot
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientl1
@@ -564,7 +510,6 @@
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientr1
@@ -574,7 +519,6 @@
   bodyPart: LLeg
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientl2
@@ -584,7 +528,6 @@
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxfootgradientr2
@@ -594,7 +537,6 @@
   bodyPart: RHand
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxhandgradientr1
@@ -608,7 +550,6 @@
   bodyPart: LHand
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxhandgradientl1
@@ -622,7 +563,6 @@
   bodyPart: Head
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxheadgradient1
@@ -636,7 +576,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailbell1
@@ -648,7 +587,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: true
-  followSkinColor: true
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailcolorable
@@ -658,7 +596,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtaillantern
@@ -669,7 +606,6 @@
   bodyPart: Chest
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsinglestripe
@@ -679,7 +615,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailsmallplume
@@ -689,7 +624,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailspines
@@ -699,7 +633,6 @@
   bodyPart: LArm
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxarmsstripesl
@@ -709,7 +642,6 @@
   bodyPart: RArm
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxarmsstripesr
@@ -719,7 +651,6 @@
   bodyPart: LLeg
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxlegsstripesl
@@ -729,7 +660,6 @@
   bodyPart: RFoot
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxlegsstripesr
@@ -739,7 +669,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxchains
@@ -749,7 +678,6 @@
   bodyPart: Tail
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxsunandmoon
@@ -759,7 +687,6 @@
   bodyPart: Head
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxcheeks
@@ -769,7 +696,6 @@
   bodyPart: Chest
   groupWhitelist: [ Vox ]
   forcedColoring: false
-  followSkinColor: false
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxbelly
