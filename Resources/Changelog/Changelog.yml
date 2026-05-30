@@ -5201,3 +5201,10 @@ Entries:
   id: 9489
   time: '2026-05-24T02:09:26.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1072
+- author: entings
+  changes:
+    - type: Fix
+      message: Arachnids no longer have human metabolisms.
+  id: 9490
+  time: '2026-05-24T02:03:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1073
