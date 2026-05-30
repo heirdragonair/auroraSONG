@@ -1,6 +1,6 @@
 - type: marking
   id: SlimeNose
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true
   sprites:
@@ -9,7 +9,7 @@
 
 - type: marking
   id: SlimeMouth
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true
   sprites:
@@ -18,7 +18,7 @@
 
 - type: marking
   id: SlimeBrain
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true
   sprites:
@@ -59,7 +59,7 @@
 
 - type: marking
   id: SlimeBonehead
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   coloring:
     default:

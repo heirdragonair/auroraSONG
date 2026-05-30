@@ -150,7 +150,7 @@
 
 - type: marking # Aurora's Song - Moved slime's markings to overlay
   id: SlimeSmileScars
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   sprites:
@@ -167,7 +167,7 @@
 
 - type: marking # Aurora's Song - Moved slime markings to overlay
   id: HeadSlimeTwisting
-  bodyPart: Head
+  bodyPart: HeadSide # Aurora's Song Head>HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   sprites:

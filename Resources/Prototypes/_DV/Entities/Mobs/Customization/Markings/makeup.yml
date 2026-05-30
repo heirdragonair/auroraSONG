@@ -13,7 +13,7 @@
 
 - type: marking # Aurora's Song - Moved slime's markings to overlay
   id: MakeupSlimeLips
-  bodyPart: Head
+  bodyPart: HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   coloring:
@@ -40,7 +40,7 @@
 
 - type: marking # Aurora's Song - Moved slime's markings to overlay
   id: MakeupSlimeBlush
-  bodyPart: Head
+  bodyPart: HeadSide
   groupWhitelist: [Slime]
   forcedColoring: true # Aurora's Song
   coloring:

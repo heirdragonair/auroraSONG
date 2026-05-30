@@ -19,6 +19,9 @@
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2
       required: false
+    enum.HumanoidVisualLayers.HeadSide:
+      limit: 2
+      required: false
     # Aurora's Song End
     enum.HumanoidVisualLayers.Chest:
       limit: 4 # imp 2<4
@@ -241,6 +244,11 @@
 - type: entity
   parent: [ OrganBaseHead, OrganSlimePersonExternal ]
   id: OrganSlimePersonHead
+  components: # Aurora's Song - We have custom slime heads
+  - type: VisualOrgan
+    data:
+      sprite: null
+      state: null
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganSlimePersonExternal ]
