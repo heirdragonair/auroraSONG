@@ -5119,3 +5119,12 @@ Entries:
   id: 9479
   time: '2026-05-25T09:12:32.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1081
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: >-
+        The Alley no longer has a table on top of a table, Command area is
+        actually powered and fixed a disposal pipe.
+  id: 9480
+  time: '2026-05-25T08:59:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1082
