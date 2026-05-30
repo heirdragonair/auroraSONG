@@ -5208,3 +5208,10 @@ Entries:
   id: 9490
   time: '2026-05-24T02:03:50.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1073
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Adds a bunch of religious-themed outfits to loadouts, from Impstation!
+  id: 9491
+  time: '2026-05-23T21:37:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1066
