@@ -140,7 +140,7 @@
       amount: 1
 
 - type: entity
-  parent: [ClothingOuterCoatBomberBlack, BaseSecurityContraband] # security contraband because this one's armored
+  parent: [ClothingOuterCoatBomberBlack, BaseC1Contraband] # security contraband because this one's armored -- Aurora's Song - BaseSecurityContraband > BaseC1Contraband
   id: ClothingOuterCoatBomberSecurity
   name: security bomber jacket
   description: A red bomber jacket with kevlar lining, worn with the sleeves pushed up. The shield on the back is sewn with special high-vis thread. If you're feeling bold, you can loosen how it fits with a knife.
