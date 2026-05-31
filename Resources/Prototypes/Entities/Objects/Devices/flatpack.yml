@@ -293,7 +293,8 @@
     size: Normal
   - type: Flatpack
     entity: XenoborgExtractor
-  - type: GuideHelp
-    guides:
-    - Xenoborgs
+# Aurora's Song - Disable xenoborg guide
+#  - type: GuideHelp
+#    guides:
+#    - Xenoborgs
 
