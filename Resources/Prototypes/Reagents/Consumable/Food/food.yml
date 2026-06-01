@@ -84,7 +84,7 @@
           reagent: Nutriment
           min: 0.1
         factor: 1
-    Medicine: # Aurora: Fairies get blood from suger
+    Bloodstream: # Aurora: Fairies get blood from suger
       effects:
       - !type:ModifyBloodLevel
         conditions:

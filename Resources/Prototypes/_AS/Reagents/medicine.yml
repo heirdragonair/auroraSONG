@@ -7,7 +7,7 @@
   flavor: metallic
   color: "#EDFAFF"
   metabolisms:
-    Medicine:
+    Bloodstream: # Aurora's Song - Medicine>Bloodstream
       metabolismRate: 0.5
       effects:
       - !type:AdjustReagent

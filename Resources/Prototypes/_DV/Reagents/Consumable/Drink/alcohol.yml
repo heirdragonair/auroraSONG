@@ -8,7 +8,7 @@
   color: "#331002"
   recognizable: true
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 1

@@ -9,7 +9,7 @@
   boilingPoint: 2327.0
   meltingPoint: 660.0
   metabolisms: #Floofstation, wipes aphrodisiacs
-    Medicine:
+    Bloodstream: # Aurora's Song - Medicine>Bloodstream
       effects:
       - !type:AdjustReagent
         reagent: Pomelustine
@@ -244,7 +244,7 @@
   boilingPoint: 759.0
   # Frontier: Sheleg
   metabolisms:
-    Food:
+    Digestion: # Aurora's Song - Food>Digestion
       effects:
       - !type:AdjustTemperature
         conditions:

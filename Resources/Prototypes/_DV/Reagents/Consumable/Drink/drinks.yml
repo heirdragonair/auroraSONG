@@ -13,7 +13,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -51,14 +51,14 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.20
-    Poison:
+    Bloodstream: # Aurora's Song - Poison>Bloodstream
       effects:
       - !type:HealthChange
         damage:
@@ -79,7 +79,7 @@
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -101,7 +101,7 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -124,14 +124,14 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.30
-    Poison:
+    Bloodstream: # Aurora's Song - Poison>Bloodstream
       effects:
       - !type:HealthChange
         damage:
@@ -174,14 +174,14 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.25
-    Poison:
+    Bloodstream: # Aurora's Song - Poison>Bloodstream
       effects:
       - !type:Jitter
 
@@ -217,7 +217,7 @@
   metamorphicChangeColor: false
   fizziness: 0.2
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2

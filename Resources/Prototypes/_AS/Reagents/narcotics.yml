@@ -7,7 +7,7 @@
   flavor: spooky
   color: "#A77C8B"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.05
       effects:
       - !type:PopupMessage
@@ -33,7 +33,7 @@
   flavor: sharp
   color: "#412663"
   metabolisms:
-    Medicine:
+    Bloodstream: # Aurora's Song - Medicine>Bloodstream
       metabolismRate : 0.1
       effects:
       - !type:PopupMessage
@@ -71,7 +71,7 @@
   flavor: hope
   color: "#55B82E"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.05
       effects:
       - !type:PopupMessage
@@ -94,7 +94,7 @@
   flavor: mindful
   color: "#A77C8B"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.5
       effects:
       - !type:PopupMessage
@@ -120,7 +120,7 @@
   flavor: spooky
   color: "#363B4D"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate: 0.1
       effects:
       - !type:MovementSpeedModifier
@@ -154,7 +154,7 @@
   flavor: magical
   color: "#D05183"
   metabolisms:
-    Narcotic:
+    Bloodstream: # Aurora's Song - Narcotic>Bloodstream
       metabolismRate : 0.5
       effects:
       - !type:MovementSpeedModifier

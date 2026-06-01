@@ -47,7 +47,7 @@
     - !type:CleanDecalsReaction {}
   # Moffstation start - Allow avali to drink ammonia
   metabolisms:
-    Food:
+    Digestion: # Aurora's Song - Food>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
