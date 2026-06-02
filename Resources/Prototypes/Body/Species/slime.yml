@@ -213,7 +213,7 @@
   - type: SnoutHelmet # Aurora's Song - Animal Slimes
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganSlimePerson
   abstract: true
   suffix: slime person

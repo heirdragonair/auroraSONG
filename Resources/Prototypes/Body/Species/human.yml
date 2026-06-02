@@ -107,7 +107,7 @@
     allowedEmotes: [ 'Belch' ] # Frontier
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganHuman
   abstract: true
   suffix: human

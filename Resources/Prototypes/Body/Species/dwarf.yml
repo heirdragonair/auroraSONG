@@ -77,7 +77,7 @@
     viewRange: 5 # Frontier
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganDwarf
   abstract: true
   suffix: Dwarf

@@ -203,7 +203,7 @@
   - type: FluffyWhitelist # Frontier
 
 - type: entity
-  parent: OrganBase
+  parent: OrganBaseOrganic
   id: OrganMoth
   abstract: true
   suffix: Moth
