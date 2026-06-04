@@ -12,7 +12,7 @@ namespace Content.Shared.Humanoid;
 
 [DataDefinition]
 [Serializable, NetSerializable]
-public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, IEquatable<HumanoidCharacterAppearance>
+public sealed partial class HumanoidCharacterAppearance : IEquatable<HumanoidCharacterAppearance>
 {
     [DataField]
     public Color EyeColor { get; set; } = Color.Black;
@@ -131,12 +131,8 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
 
         var newHeight = random.NextFloat(0.8f, 1.2f); // Random height between 80% and 120% of normal
         var newWidth = random.NextFloat(0.8f, 1.2f); // Random width between 80% and 120% of normal
-        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new(), newHeight, newWidth); // Aurora's Song - Scale sliders
 
-        float RandomizeColor(float channel)
-        {
-            return MathHelper.Clamp01(channel + random.Next(-25, 25) / 100f);
-        }
+        return new HumanoidCharacterAppearance(newEyeColor, newSkinColor, new(), newHeight, newWidth); // Aurora's Song - Scale sliders
     }
 
     public static Color ClampColor(Color color)
@@ -195,17 +191,6 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
             validatedMarkings,
             appearance.Height, // Aurora's Song
             appearance.Width); // Aurora's Song
-    }
-
-    public bool MemberwiseEquals(ICharacterAppearance maybeOther)
-    {
-        if (maybeOther is not HumanoidCharacterAppearance other) return false;
-        if (!EyeColor.Equals(other.EyeColor)) return false;
-        if (!SkinColor.Equals(other.SkinColor)) return false;
-        if (!MarkingManager.MarkingsAreEqual(Markings, other.Markings)) return false;
-        if (!Height.Equals(other.Height)) return false; // Aurora's Song
-        if (!Width.Equals(other.Width)) return false; // Aurora's Song
-        return true;
     }
 
     public bool Equals(HumanoidCharacterAppearance? other)

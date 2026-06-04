@@ -26,8 +26,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, false, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, false, SlotFlags.OUTERCLOTHING); // Aurora's Song
+            _humanoidSystem.SetLayerOcclusion(uid, HumanoidVisualLayers.RArmExtension, true, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
+            _humanoidSystem.SetLayerOcclusion(uid, HumanoidVisualLayers.Tail, true, SlotFlags.OUTERCLOTHING); // Aurora's Song
         }
     }
 
@@ -35,8 +35,8 @@ public sealed class HarpyVisualsSystem : EntitySystem
     {
         if (args.Slot == "outerClothing" && HasComp<HarpyHideWingsComponent>(args.Equipment)) // Frontier: Swap tag to comp
         {
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.RArmExtension, true, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
-            _humanoidSystem.SetLayerVisibility(uid, HumanoidVisualLayers.Tail, true, SlotFlags.OUTERCLOTHING); // Aurora's Song
+            _humanoidSystem.SetLayerOcclusion(uid, HumanoidVisualLayers.RArmExtension, false, SlotFlags.OUTERCLOTHING); // Frontier: RArm<RArmExtension // Aurora's Song
+            _humanoidSystem.SetLayerOcclusion(uid, HumanoidVisualLayers.Tail, false, SlotFlags.OUTERCLOTHING); // Aurora's Song
         }
     }
 }

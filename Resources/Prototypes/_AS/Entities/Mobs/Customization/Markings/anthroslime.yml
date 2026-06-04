@@ -5,7 +5,7 @@
   groupWhitelist: [Slime]
   sprites:
   - sprite: Mobs/Species/Slime/parts.rsi
-    state:  head_m
+    state:  head
 
 # Vulp Slimes
 - type: marking

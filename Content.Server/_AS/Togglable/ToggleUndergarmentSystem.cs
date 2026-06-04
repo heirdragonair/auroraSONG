@@ -40,13 +40,13 @@ public sealed class ToggleUndergarmentSystem : EntitySystem
     {
         ent.Comp.UndergarmentTopEnabled = !ent.Comp.UndergarmentTopEnabled;
 
-        _humanoid.SetLayerVisibility(ent.Owner, UndergarmentTop, ent.Comp.UndergarmentTopEnabled, SlotFlags.PREVENTEQUIP);
+        _humanoid.SetLayerOcclusion(ent.Owner, UndergarmentTop, !ent.Comp.UndergarmentTopEnabled, SlotFlags.PREVENTEQUIP);
     }
 
     private void OnToggleBottom(Entity<ToggleUndergarmentComponent> ent, ref ToggleUndergarmentBottomActionEvent _)
     {
         ent.Comp.UndergarmentBottomEnabled = !ent.Comp.UndergarmentBottomEnabled;
 
-        _humanoid.SetLayerVisibility(ent.Owner, UndergarmentBottom, ent.Comp.UndergarmentBottomEnabled, SlotFlags.PREVENTEQUIP);
+        _humanoid.SetLayerOcclusion(ent.Owner, UndergarmentBottom, !ent.Comp.UndergarmentBottomEnabled, SlotFlags.PREVENTEQUIP);
     }
 }

@@ -9,6 +9,9 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Body;
 
+/// <summary>
+/// Class responsible for managing the appearance of an entity with <see cref="VisualBodyComponent" /> via its organs with <see cref="VisualOrganComponent" />
+/// </summary>
 public abstract partial class SharedVisualBodySystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
@@ -69,10 +72,10 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
             switch (appearance) // Use a switch
             {
                 case { MatchSkin: true } when skinColor is { } color:
-                    markingWithColor.SetColor(color.WithAlpha(appearance.LayerAlpha));
+                    markingWithColor = markingWithColor.WithColor(color.WithAlpha(appearance.LayerAlpha));
                     break;
                 case { ForcedColoring: not null }:
-                    markingWithColor.SetColor(appearance.ForcedColoring.Value.WithAlpha(appearance.LayerAlpha));
+                    markingWithColor = markingWithColor.WithColor(appearance.ForcedColoring.Value.WithAlpha(appearance.LayerAlpha));
                     break;
             }
             // Aurora's Song End
@@ -98,32 +101,6 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
     {
         ent.Comp.Markings = markings;
         Dirty(ent);
-    }
-
-    public void CopyAppearanceFrom(Entity<BodyComponent?> source, Entity<BodyComponent?> target)
-    {
-        if (!Resolve(source, ref source.Comp) || !Resolve(target, ref target.Comp))
-            return;
-
-        var sourceOrgans = _container.EnsureContainer<Container>(source, BodyComponent.ContainerID);
-
-        foreach (var sourceOrgan in sourceOrgans.ContainedEntities)
-        {
-            var evt = new OrganCopyAppearanceEvent(sourceOrgan);
-            RaiseLocalEvent(target, ref evt);
-        }
-
-        // Aurora's Song Start - Apply scaling (height and width)
-        if (!TryComp<HumanoidProfileComponent>(source, out var sourceAppearance))
-            return;
-
-        if (sourceAppearance.Height != 1.0f || sourceAppearance.Width != 1.0f)
-        {
-            var scaleVisuals = EnsureComp<ScaleVisualsComponent>(target);
-            var appearance = EnsureComp<AppearanceComponent>(target);
-            _appearance.SetData(target, ScaleVisuals.Scale, new Vector2(sourceAppearance.Width, sourceAppearance.Height), appearance);
-        }
-        // Aurora's Song End
     }
 
     private void OnVisualOrganCopyAppearance(Entity<VisualOrganComponent> ent, ref BodyRelayedEvent<OrganCopyAppearanceEvent> args)
@@ -166,6 +143,12 @@ public abstract partial class SharedVisualBodySystem : EntitySystem
             SetOrganColor(ent, ent.Comp.Profile.EyeColor);
         else
             SetOrganColor(ent, ent.Comp.Profile.SkinColor);
+
+        if (ent.Comp.SexStateOverrides is { } overrides && overrides.TryGetValue(data.Sex, out var state))
+        {
+            ent.Comp.Data.State = state;
+            SetOrganAppearance(ent, ent.Comp.Data);
+        }
     }
 
     private void OnMarkingsOrganApplyMarkings(Entity<VisualOrganMarkingsComponent> ent, ref BodyRelayedEvent<ApplyOrganMarkingsEvent> args)

@@ -2,14 +2,15 @@
 
 using Content.Shared.Body;
 using Content.Shared.Humanoid;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._AS.Humanoid.Markings;
 
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class SnoutHelmetComponent : Component
 {
-    [DataField]
+    [DataField, AutoNetworkedField]
     public string? AlternateHelmet;
 
     [DataField]

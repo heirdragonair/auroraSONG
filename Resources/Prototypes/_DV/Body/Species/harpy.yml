@@ -201,20 +201,29 @@
       group: Harpy
 
 - type: entity
-  parent: [ OrganBaseTorso, OrganHarpyExternal ]
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganHarpyExternal ] # Aurora's Song - Add sexed organs
   id: OrganHarpyTorso
 
 - type: entity
-  parent: [ OrganBaseHead, OrganHarpyExternal ]
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganHarpyExternal ] # Aurora's Song - Add sexed organs
   id: OrganHarpyHead
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganHarpyExternal ]
   id: OrganHarpyArmLeft
+  # Aurora's Song - Omitting LArmExt because its unused currently
 
 - type: entity
   parent: [ OrganBaseArmRight, OrganHarpyExternal ]
   id: OrganHarpyArmRight
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers: # Aurora's Song - Heel stockings
+    - enum.HumanoidVisualLayers.RArmExtension
+    markingData:
+      layers:
+      - RArm
+      - RArmExtension
 
 - type: entity
   parent: [ OrganBaseHandLeft, OrganHarpyExternal ]
@@ -248,12 +257,6 @@
   components:
   - type: Metabolizer
     updateInterval: 2.0
-    removeEmpty: true
-    solutionOnBody: false
-    solution: "Lung"
-    groups:
-    - id: Gas
-      rateModifier: 200.0
 
 - type: entity
   id: ActionHarpyPlayMidi

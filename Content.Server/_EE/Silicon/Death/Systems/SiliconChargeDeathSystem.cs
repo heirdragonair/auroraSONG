@@ -6,6 +6,7 @@ using Content.Server._EE.Power.Components;
 using Content.Server.Humanoid;
 using Content.Shared.Humanoid;
 using Content.Shared.Inventory; // Aurora's Song
+using Content.Shared.Mobs; // Aurora's Song
 using Content.Shared.Power.Components;
 using Content.Shared.StatusEffectNew; // starcup
 
@@ -23,6 +24,7 @@ public sealed class SiliconDeathSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<SiliconDownOnDeadComponent, SiliconChargeStateUpdateEvent>(OnSiliconChargeStateUpdate);
+        SubscribeLocalEvent<SiliconDownOnDeadComponent, MobStateChangedEvent>(OnSiliconMobStateChange); // Aurora's Song
     }
 
     private void OnSiliconChargeStateUpdate(EntityUid uid, SiliconDownOnDeadComponent siliconDeadComp, SiliconChargeStateUpdateEvent args)
@@ -53,7 +55,7 @@ public sealed class SiliconDeathSystem : EntitySystem
         EntityManager.EnsureComponent<SleepingComponent>(uid);
         _statusEffect.TrySetStatusEffectDuration(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
 
-        _hidableLayers.SetLayerVisibility(uid, HumanoidVisualLayers.Eyes, visible: false, SlotFlags.PREVENTEQUIP); // Aurora's Song
+        _hidableLayers.SetLayerOcclusion(uid, HumanoidVisualLayers.Eyes, hidden: true, SlotFlags.PREVENTEQUIP); // Aurora's Song
 
         siliconDeadComp.Dead = true;
 
@@ -65,9 +67,17 @@ public sealed class SiliconDeathSystem : EntitySystem
         _statusEffect.TryRemoveStatusEffect(uid, SleepingSystem.StatusEffectForcedSleeping); // starcup: edited for status effects refactor
         _sleep.TryWaking(uid, true, null);
 
+        _hidableLayers.SetLayerOcclusion(uid, HumanoidVisualLayers.Eyes, hidden: false, SlotFlags.PREVENTEQUIP); // Aurora's Song
+
         siliconDeadComp.Dead = false;
 
         RaiseLocalEvent(uid, new SiliconChargeAliveEvent(uid, battery)); // starcup
+    }
+
+    // Aurora's Song - Make them turn off their screen on actual death
+    private void OnSiliconMobStateChange(EntityUid uid, SiliconDownOnDeadComponent component, MobStateChangedEvent args)
+    {
+        _hidableLayers.SetLayerOcclusion(uid, HumanoidVisualLayers.Eyes, hidden: args.NewMobState != MobState.Alive, SlotFlags.PREVENTEQUIP);
     }
 }
 

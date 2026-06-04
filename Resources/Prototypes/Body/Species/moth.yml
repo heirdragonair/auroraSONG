@@ -147,7 +147,7 @@
   - type: Speech
     speechVerb: Moth
     speechSounds: Moth # Frontier: upstream#37297
-    allowedEmotes: ['Chitter', 'Squeak']
+    allowedEmotes: ['Chitter', 'Squeak', 'Flap', "Flutter"] # Aurora's Song - Add fairy flutter
   - type: TypingIndicator
     proto: moth
   - type: Bloodstream
@@ -168,6 +168,8 @@
       Male: UnisexMoth
       Female: UnisexMoth
       Unsexed: UnisexMoth
+  - type: BodyEmotes
+    soundsId: MothBodyEmotes
   - type: MovementSpeedModifier
     baseWeightlessAcceleration: 1.5 # Move around more easily in space.
     baseWeightlessFriction: 1
@@ -236,12 +238,16 @@
     sprite: Mobs/Species/Moth/parts.rsi
 
 - type: entity
-  parent: [ OrganBaseTorso, OrganMothExternal ]
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorso, OrganMothExternal ]
   id: OrganMothTorso
 
 - type: entity
   parent: [ OrganBaseHead, OrganMothExternal ]
   id: OrganMothHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.HeadTop
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganMothExternal ]
