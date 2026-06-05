@@ -11,7 +11,6 @@ using Content.Server.Administration.Logs;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared._Floof.Consent;  //Floofstation
-using Content.Shared.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Ghost.Roles;
 using Content.Shared.Humanoid;

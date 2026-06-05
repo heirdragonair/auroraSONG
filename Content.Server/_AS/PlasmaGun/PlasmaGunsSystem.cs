@@ -7,7 +7,7 @@ using Content.Shared.Atmos;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Interaction;
-using Content.Shared.PlasmaGun;
+using Content.Shared._AS.PlasmaGun;
 using Content.Shared.PneumaticCannon;
 using Content.Shared.StatusEffect;
 using Content.Shared.Tools.Systems;
@@ -16,16 +16,14 @@ using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Containers;
 
-namespace Content.Server.PlasmaGun;
+namespace Content.Server._AS.PlasmaGun;
 
 // This is essentially a more specialised implementation of the PneumaticCannonSystem to be used with plasma guns, avoiding
 // the use of certain features (like self stun on high power, throwing items)
 
 public sealed class PlasmaGunsSystem : SharedPlasmaGunsSystem
 {
-    [Dependency] private readonly AtmosphereSystem _atmos = default!;
     [Dependency] private readonly GasTankSystem _gasTank = default!;
-    [Dependency] private readonly GunSystem _gun = default!;
     [Dependency] private readonly ItemSlotsSystem _slots = default!;
 
     public override void Initialize()

@@ -31,7 +31,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Content.Shared.Maps;
 using Robust.Shared.Map.Components;
 using Content.Shared.Tiles; // Frontier: safe zone
 

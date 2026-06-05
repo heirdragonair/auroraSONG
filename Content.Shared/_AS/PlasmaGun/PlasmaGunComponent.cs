@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 
-namespace Content.Shared.PlasmaGun;
+namespace Content.Shared._AS.PlasmaGun;
 
 /// <summary>
 /// This is a rejigged implementation of the PneumaticCannonComponent, tailored to work for a series of plasma guns

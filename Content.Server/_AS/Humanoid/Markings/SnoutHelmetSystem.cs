@@ -7,7 +7,7 @@ namespace Content.Server._AS.Humanoid.Markings;
 
 public sealed class SnoutHelmetSystem : EntitySystem
 {
-    [Dependency] private readonly SharedVisualBodySystem _visualBody = default!;
+    // [Dependency] private readonly SharedVisualBodySystem _visualBody = default!; // Aurora's Song
 
     public override void Initialize()
     {

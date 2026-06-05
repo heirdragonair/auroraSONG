@@ -117,7 +117,7 @@ public sealed class ResizableControl : Control
             DefaultCursorShape = CursorShape.Arrow;
     }
 
-    protected virtual DragMode GetDragModeFor(Vector2 relativeMousePos)
+    private DragMode GetDragModeFor(Vector2 relativeMousePos)
     {
         var mode = DragMode.None;
 

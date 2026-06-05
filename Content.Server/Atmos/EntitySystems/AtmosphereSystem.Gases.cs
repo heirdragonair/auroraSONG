@@ -15,8 +15,6 @@ namespace Content.Server.Atmos.EntitySystems
 
         private GasReactionPrototype[] _gasReactions = [];
 
-        public string?[] GasReagents = new string[Atmospherics.TotalNumberOfGases];
-
         /// <summary>
         ///     List of gas reactions ordered by priority.
         /// </summary>
@@ -72,25 +70,6 @@ namespace Content.Server.Atmos.EntitySystems
             return NumericsHelpers.HorizontalAdd(temp) * HeatScale;
         }
         // END IMP ADD
-
-        /// <summary>
-        ///     Calculates the heat capacity for a gas mixture.
-        /// </summary>
-        /// <param name="mixture">The mixture whose heat capacity should be calculated</param>
-        /// <param name="applyScaling"> Whether the internal heat capacity scaling should be applied. This should not be
-        /// used outside of atmospheric related heat transfer.</param>
-        /// <returns></returns>
-        public float GetHeatCapacity(GasMixture mixture, bool applyScaling)
-        {
-            var scale = GetHeatCapacityCalculation(mixture.Moles, mixture.Immutable);
-
-            // By default GetHeatCapacityCalculation() has the heat-scale divisor pre-applied.
-            // So if we want the un-scaled heat capacity, we have to multiply by the scale.
-            return applyScaling ? scale : scale * HeatScale;
-        }
-
-        private float GetHeatCapacity(GasMixture mixture)
-            =>  GetHeatCapacityCalculation(mixture.Moles, mixture.Immutable);
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         protected override float GetHeatCapacityCalculation(float[] moles, bool space)

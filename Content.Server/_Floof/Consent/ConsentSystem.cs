@@ -18,10 +18,9 @@ namespace Content.Server._Floof.Consent;
 
 public sealed class ConsentSystem : SharedConsentSystem
 {
-    [Dependency] private readonly ConsentSystem _consent = default!;
+    // [Dependency] private readonly ConsentSystem _consent = default!; // Aurora's Song
     [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!; // Aurora's Song
+    // [Dependency] private readonly StationSpawningSystem _stationSpawning = default!; // Aurora's Song
 
     protected override FormattedMessage GetConsentText(NetUserId userId)
     {
