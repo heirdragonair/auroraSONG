@@ -322,7 +322,6 @@
     - enum.HumanoidVisualLayers.HeadSide
     - enum.HumanoidVisualLayers.FacialHair
     - enum.HumanoidVisualLayers.Hair
-    - enum.HumanoidVisualLayers.Head
     - enum.HumanoidVisualLayers.Eyes
     - enum.HumanoidVisualLayers.Snout
   # Aurora's Song End

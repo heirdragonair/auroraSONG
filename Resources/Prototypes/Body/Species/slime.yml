@@ -253,7 +253,6 @@
   # Aurora's Song Start - Correct hideable head layers
   - type: VisualOrganMarkings
     hideableLayers:
-    - enum.HumanoidVisualLayers.Head
     - enum.HumanoidVisualLayers.HeadTop
     - enum.HumanoidVisualLayers.HeadSide
     - enum.HumanoidVisualLayers.Hair

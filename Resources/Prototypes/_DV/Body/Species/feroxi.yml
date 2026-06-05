@@ -174,7 +174,6 @@
     - enum.HumanoidVisualLayers.Hair
     - enum.HumanoidVisualLayers.Snout
     - enum.HumanoidVisualLayers.FacialHair
-    - enum.HumanoidVisualLayers.Head
     - enum.HumanoidVisualLayers.HeadTop
   # Aurora's Song End
 
