@@ -255,7 +255,7 @@
     brokenState: broken
     normalState: normal-unshaded
   - type: DatasetVocalizer
-    dataset: NfsdDrobeAds # todo: Make vocalizers for NanoTrasen CommandVend
+    dataset: NanoTrasenOfficerTechAds # New adverts
   - type: Sprite
     sprite: _AS/Structures/Machines/VendingMachines/nanovend.rsi
     layers:
@@ -268,3 +268,32 @@
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: AccessReader
     access: [["ASNanoTrasenCommand"]]
+
+- type: entity
+  parent: ASVendingMachineNanoVend
+  id: ASVendingMachineNanoVendA
+  components:
+  - type: VendingMachine
+    pack: ASNanoTrasenOfficerVendA
+
+- type: entity
+  parent: ASVendingMachineNanoVend
+  id: ASVendingMachineNanoVendB
+  components:
+  - type: VendingMachine
+    pack: ASNanoTrasenOfficerVendB
+
+- type: entity
+  parent: ASVendingMachineNanoVend
+  id: ASVendingMachineNanoVendC
+  components:
+  - type: VendingMachine
+    pack: ASNanoTrasenOfficerVendC
+
+- type: entity
+  parent: ASVendingMachineNanoVend
+  id: ASVendingMachineNanoVendD
+  components:
+  - type: VendingMachine
+    pack: ASNanoTrasenOfficerVendD
+
