@@ -1333,3 +1333,12 @@ Entries:
   id: 9529
   time: '2026-06-12T22:00:26.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1061
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Slimes and Avali can select more Head (Side) markings.
+    - type: Fix
+      message: Slimes and Arachnids now have working eyes
+  id: 9530
+  time: '2026-06-13T03:53:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1131
