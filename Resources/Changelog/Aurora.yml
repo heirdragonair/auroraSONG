@@ -1367,3 +1367,18 @@ Entries:
   id: 9533
   time: '2026-06-14T21:46:01.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1138
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: >-
+        Most species now have the same marking allotments for their heads,
+        chests, arms, and legs.
+    - type: Tweak
+      message: Slimes and arachnids can select multiple eye markings.
+    - type: Fix
+      message: >-
+        Humans can have tails again, and Vox no longer have access to DO NOT USE
+        markings.
+  id: 9534
+  time: '2026-06-14T22:39:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1141
