@@ -1414,3 +1414,10 @@ Entries:
   id: 9538
   time: '2026-06-15T02:34:13.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1147
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: tweak is now a valid PR type, developers rejoice!
+  id: 9539
+  time: '2026-06-15T20:48:15.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1151
