@@ -62,10 +62,11 @@
 #  id: N14ClosetGrey1Refilling
 #  suffix: Refilling,Domestic,Random
 
-- type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14LootClosetGrey1
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGrey1 ]
+#  id: N14LootClosetGrey1
+#  suffix: Loot,Domestic,Random
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -73,10 +74,11 @@
 #  id: N14ClosetGrey1RefillingGeneric
 #  suffix: Refilling,Generic,Random
 
-- type: entity
-  parent: [ N14ClosetGrey1 ]
-  id: N14LootGenericClosetGrey1
-  suffix: Loot,Generic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGrey1 ]
+#  id: N14LootGenericClosetGrey1
+#  suffix: Loot,Generic,Random
 
 - type: entity
   id: N14ClosetGrey2
@@ -91,10 +93,11 @@
 #  id: N14ClosetGrey2Refilling
 #  suffix: Refilling,Domestic,Random
 
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14LootClosetGrey2
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGrey2 ]
+#  id: N14LootClosetGrey2
+#  suffix: Loot,Domestic,Random
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -102,10 +105,11 @@
 #  id: N14ClosetGrey2RefillingGeneric
 #  suffix: Refilling,Generic,Random
 
-- type: entity
-  parent: [ N14ClosetGrey2 ]
-  id: N14LootGenericClosetGrey2
-  suffix: Loot,Generic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGrey2 ]
+#  id: N14LootGenericClosetGrey2
+#  suffix: Loot,Generic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -120,10 +124,11 @@
 #  id: N14ClosetRustyRefilling
 #  suffix: Refilling,Domestic,Random
 
-- type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14LootClosetRusty
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetRusty ]
+#  id: N14LootClosetRusty
+#  suffix: Loot,Domestic,Random
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -131,10 +136,11 @@
 #  id: N14ClosetRustyRefillingGeneric
 #  suffix: Refilling,Generic,Random
 
-- type: entity
-  parent: [ N14ClosetRusty ]
-  id: N14LootGenericClosetRusty
-  suffix: Loot,Generic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetRusty ]
+#  id: N14LootGenericClosetRusty
+#  suffix: Loot,Generic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -149,10 +155,11 @@
 #  id: N14ClosetGunCabinetRefilling
 #  suffix: Refilling,Military,Random
 
-- type: entity
-  parent: [ N14ClosetGunCabinet ]
-  id: N14LootClosetGunCabinet
-  suffix: Loot,Military,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGunCabinet ]
+#  id: N14LootClosetGunCabinet
+#  suffix: Loot,Military,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -176,10 +183,11 @@
     damageCoefficient: 0.90
   - type: AntiRottingContainer
 
-- type: entity
-  parent: [ N14ClosetFridgeDirty, N14ClosetFridgeWideDirty ]
-  id: N14LootClosetFridge
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetFridgeDirty, N14ClosetFridgeWideDirty ]
+#  id: N14LootClosetFridge
+#  suffix: Loot,Domestic,Random
 
 - type: entity
   parent: N14ClosetBaseW
@@ -205,10 +213,11 @@
 #  id: N14ClosetDoubleRefilling
 #  suffix: Refilling,Domestic,Random
 
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14LootClosetDouble
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetDouble ]
+#  id: N14LootClosetDouble
+#  suffix: Loot,Domestic,Random
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -216,10 +225,11 @@
 #  id: N14ClosetDoubleRefillingGeneric
 #  suffix: Refilling,Generic,Random
 
-- type: entity
-  parent: [ N14ClosetDouble ]
-  id: N14LootGenericClosetDouble
-  suffix: Loot,Generic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetDouble ]
+#  id: N14LootGenericClosetDouble
+#  suffix: Loot,Generic,Random
 
 # Wooden Closets
 
@@ -258,10 +268,11 @@
 #  id: N14ClosetCabinetWoodRefilling
 #  suffix: Refilling,Domestic,Random
 
-- type: entity
-  parent: [ N14ClosetCabinetWood ]
-  id: N14LootClosetCabinetWood
-  suffix: Loot,Domestic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetCabinetWood ]
+#  id: N14LootClosetCabinetWood
+#  suffix: Loot,Domestic,Random
 
 # Aurora's Song | Commenting out Fallout references
 #- type: entity
@@ -272,22 +283,25 @@
 #  - type: Sprite
 #    sprite: _Nuclear14/Structures/Storage/Closets/closetenclave.rsi
 
-- type: entity
-  parent: N14ClosetBaseW
-  id: N14ClosetGeneric
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Closets/closetgeneric.rsi
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: N14ClosetBaseW
+#  id: N14ClosetGeneric
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Structures/Storage/Closets/closetgeneric.rsi
 
-- type: entity
-  parent: [ N14ClosetGeneric ]
-  id: N14LootClosetGeneric
-  suffix: Loot,Generic,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGeneric ]
+#  id: N14LootClosetGeneric
+#  suffix: Loot,Generic,Random
 
-- type: entity
-  parent: [ N14ClosetGeneric ]
-  id: N14LootMilitaryClosetGeneric
-  suffix: Loot,Military,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetGeneric ]
+#  id: N14LootMilitaryClosetGeneric
+#  suffix: Loot,Military,Random
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -358,7 +372,8 @@
 #  id: N14ClosetWallMedicabinetRefilling
 #  suffix: Refilling,Medical,Random
 
-- type: entity
-  parent: [ N14ClosetWallMedicabinet ]
-  id: N14LootClosetWallMedicabinet
-  suffix: Loot,Medical,Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14ClosetWallMedicabinet ]
+#  id: N14LootClosetWallMedicabinet
+#  suffix: Loot,Medical,Random

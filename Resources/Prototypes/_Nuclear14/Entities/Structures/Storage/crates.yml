@@ -13,10 +13,11 @@
     reflectProb: 0.2
     spread: 90
 
-- type: entity
-  parent: [ N14CrateFootlocker ]
-  id: N14LootCrateFootlocker
-  suffix: Loot, RandomSmall
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateFootlocker ]
+#  id: N14LootCrateFootlocker
+#  suffix: Loot, RandomSmall
 
 - type: entity
   parent: CrateGenericSteel
@@ -27,10 +28,11 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Crates/aluminiumcrate.rsi
 
-- type: entity
-  parent: [ N14CrateFootlocker ]
-  id: N14LootCrateAluminium
-  suffix: Loot, Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateFootlocker ]
+#  id: N14LootCrateAluminium
+#  suffix: Loot, Random
 
 #Aurora's Song | Commenting out Fallout references
 #- type: entity
@@ -87,10 +89,11 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Crates/medicalcrate.rsi
 
-- type: entity
-  parent: [ N14CrateMedical ]
-  id: N14LootCrateMedical
-  suffix: Loot, Medical
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateMedical ]
+#  id: N14LootCrateMedical
+#  suffix: Loot, Medical
 
 # Aurora's Song | We don't need refilling prototypes
 #- type: entity
@@ -147,11 +150,12 @@
       map: ["enum.StorageVisualLayers.Door"]
   - type: AntiRottingContainer
 
-- type: entity
-  parent: [ N14CrateFreezer ]
-  id: N14LootCrateFreezer
-  name: structures-n14-storage-crate-freezer
-  suffix: Loot, Random
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateFreezer ]
+#  id: N14LootCrateFreezer
+#  name: structures-n14-storage-crate-freezer
+#  suffix: Loot, Random
 
 # Wooden
 - type: entity
@@ -186,10 +190,11 @@
 #  id: N14CrateWastelandBotanyRefilling
 #  suffix: Refilling, Random Botany
 
-- type: entity
-  parent: [ N14CrateWooden ]
-  id: N14LootCrateWastelandBotany
-  suffix: Loot, Random Botany
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateWooden ]
+#  id: N14LootCrateWastelandBotany
+#  suffix: Loot, Random Botany
 
 - type: entity
   parent: N14CrateWooden
@@ -206,10 +211,11 @@
 #  id: N14CrateMilitaryRefilling
 #  suffix: Refilling, Random Military
 
-- type: entity
-  parent: [ N14CrateMilitary ]
-  id: N14LootCrateMilitary
-  suffix: Loot,Random Military
+#Aurora's Song | We don't need loot prototypes
+#- type: entity
+#  parent: [ N14CrateMilitary ]
+#  id: N14LootCrateMilitary
+#  suffix: Loot,Random Military
 
 # Breakable Crates (deconstruct or destroy)
 - type: entity
