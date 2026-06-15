@@ -187,15 +187,16 @@
     - state: closed
       map: ["enum.DoorVisualLayers.Base"]
 
-- type: entity
-  parent: N14DoorMetalReinforced
-  id: N14DoorMetalSecureBrotherhood
-  components:
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Doors/FalloutDoors/bosdoor.rsi
-    layers:
-    - state: closed
-      map: ["enum.DoorVisualLayers.Base"]
+#Aurora's Song | Commenting out Fallout references
+#- type: entity
+#  parent: N14DoorMetalReinforced
+#  id: N14DoorMetalSecureBrotherhood
+#  components:
+#  - type: Sprite
+#    sprite: _Nuclear14/Structures/Doors/FalloutDoors/bosdoor.rsi
+#    layers:
+#    - state: closed
+#      map: ["enum.DoorVisualLayers.Base"]
 
 - type: entity
   parent: N14BaseDoor

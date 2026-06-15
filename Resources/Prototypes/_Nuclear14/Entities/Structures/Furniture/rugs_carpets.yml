@@ -62,21 +62,23 @@
   - type: Sprite
     state: mat_town
 
-- type: entity
-  parent: N14RugMatVulgar1
-  id: N14RugMatNCR
-  suffix: ncr sucks
-  components:
-  - type: Sprite
-    state: mat_ncr
+#Aurora's Song | commenting out references
+#- type: entity
+#  parent: N14RugMatVulgar1
+#  id: N14RugMatNCR
+#  suffix: ncr sucks
+#  components:
+#  - type: Sprite
+#    state: mat_ncr
 
-- type: entity
-  parent: N14RugMatVulgar1
-  id: N14RugMatBOS
-  suffix: bos sucks
-  components:
-  - type: Sprite
-    state: mat_bos
+#Aurora's Song | commenting out references
+#- type: entity
+#  parent: N14RugMatVulgar1
+#  id: N14RugMatBOS
+#  suffix: bos sucks
+#  components:
+#  - type: Sprite
+#    state: mat_bos
 
 # Rubber mats
 

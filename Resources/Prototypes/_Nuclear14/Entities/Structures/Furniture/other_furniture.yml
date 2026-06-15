@@ -32,12 +32,13 @@
   - type: Sprite
     state: cabinet_tv
 
-- type: entity
-  parent: N14Television
-  id: N14TelevisionRadking
-  components:
-  - type: Sprite
-    state: radking_tv
+# Aurora's Song | Commenting out Fallout references
+#- type: entity
+#  parent: N14Television
+#  id: N14TelevisionRadking
+#  components:
+#  - type: Sprite
+#    state: radking_tv
 
 - type: entity
   parent: N14Television

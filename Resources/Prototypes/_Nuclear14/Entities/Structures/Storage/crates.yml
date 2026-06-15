@@ -32,49 +32,51 @@
   id: N14LootCrateAluminium
   suffix: Loot, Random
 
-- type: entity
-  parent: CrateGenericSteel
-  id: N14CrateArmy
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/armycrate.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/armycrate.rsi
+#Aurora's Song | Commenting out Fallout references
+#- type: entity
+#  parent: CrateGenericSteel
+#  id: N14CrateArmy
+#  components:
+#  - type: Icon
+#    sprite: _Nuclear14/Structures/Storage/Crates/armycrate.rsi
+#  - type: Sprite
+#    sprite: _Nuclear14/Structures/Storage/Crates/armycrate.rsi
 
-- type: entity
-  parent: [ N14CrateFootlocker ]
-  id: N14LootCrateArmy
-  suffix: Loot, RandomMilitary
+#- type: entity
+#  parent: [ N14CrateFootlocker ]
+#  id: N14LootCrateArmy
+#  suffix: Loot, RandomMilitary
 
-- type: entity
-  parent: N14CrateFootlocker
-  id: N14CrateEnclave
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/crateenclave.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/crateenclave.rsi
-    # TODO: Will need an access locked variant.
+#- type: entity
+#  parent: N14CrateFootlocker
+#  id: N14CrateEnclave
+#  components:
+#  - type: Icon
+#    sprite: _Nuclear14/Structures/Storage/Crates/crateenclave.rsi
+#  - type: Sprite
+#    sprite: _Nuclear14/Structures/Storage/Crates/crateenclave.rsi
+#    # TODO: Will need an access locked variant.
 
-- type: entity
-  parent: [ N14CrateEnclave ]
-  id: N14LootCrateEnclave
-  suffix: Loot, RandomMilitary
+#- type: entity
+#  parent: [ N14CrateEnclave ]
+#  id: N14LootCrateEnclave
+#  suffix: Loot, RandomMilitary
 
-- type: entity
-  parent: N14CrateFootlocker
-  id: N14CrateEnclaveDirectional
-  suffix: directional
-  components:
-  - type: Icon
-    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
-  - type: Sprite
-    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
+#- type: entity
+#  parent: N14CrateFootlocker
+#  id: N14CrateEnclaveDirectional
+#  suffix: directional
+#  components:
+#  - type: Icon
+#    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
+#  - type: Sprite
+#    sprite: _Nuclear14/Structures/Storage/Crates/enclavecrate.rsi
 
-- type: entity
-  parent: [ N14CrateEnclaveDirectional ]
-  id: N14LootCrateEnclaveDirectional
-  suffix: Loot, RandomMilitary
+#- type: entity
+#  parent: [ N14CrateEnclaveDirectional ]
+#  id: N14LootCrateEnclaveDirectional
+#  suffix: Loot, RandomMilitary
+# Aurora's Song | Commenting out Fallout References end
 
 - type: entity
   parent: CrateGenericSteel
@@ -90,10 +92,11 @@
   id: N14LootCrateMedical
   suffix: Loot, Medical
 
-- type: entity
-  parent: [ N14CrateMedical ]
-  id: N14CrateMedicalRefilling
-  suffix: Refilling, Medical
+# Aurora's Song | We don't need refilling prototypes
+#- type: entity
+#  parent: [ N14CrateMedical ]
+#  id: N14CrateMedicalRefilling
+#  suffix: Refilling, Medical
 
 - type: entity
   parent: CrateGenericSteel
@@ -177,10 +180,11 @@
         layer:
         - MachineLayer
 
-- type: entity
-  parent: [ N14CrateWooden ]
-  id: N14CrateWastelandBotanyRefilling
-  suffix: Refilling, Random Botany
+# Aurora's Song | We don't need refilling prototypes
+#- type: entity
+#  parent: [ N14CrateWooden ]
+#  id: N14CrateWastelandBotanyRefilling
+#  suffix: Refilling, Random Botany
 
 - type: entity
   parent: [ N14CrateWooden ]
@@ -196,10 +200,11 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Storage/Crates/cratemilitary.rsi
 
-- type: entity
-  parent: [ N14CrateMilitary ]
-  id: N14CrateMilitaryRefilling
-  suffix: Refilling, Random Military
+# Aurora's Song | We don't need refilling prototypes
+#- type: entity
+#  parent: [ N14CrateMilitary ]
+#  id: N14CrateMilitaryRefilling
+#  suffix: Refilling, Random Military
 
 - type: entity
   parent: [ N14CrateMilitary ]
@@ -283,17 +288,19 @@
   - type: Sprite
     state: sarsaparilla_crate-1
 
-- type: entity
-  parent: N14CrateBreakBase
-  id: N14CrateBreakArmy
-  components:
-  - type: Sprite
-    state: army_crate
+# Aurora's Song | Commenting out Fallout references
+#- type: entity
+#  parent: N14CrateBreakBase
+#  id: N14CrateBreakArmy
+#  components:
+#  - type: Sprite
+#    state: army_crate
 
-- type: entity
-  parent: N14CrateBreakArmy
-  id: N14CrateBreakArmyDamaged
-  suffix: damaged
-  components:
-  - type: Sprite
-    state: army_crate-1 # TODO: Make this random between states -1 and -2
+#- type: entity
+#  parent: N14CrateBreakArmy
+#  id: N14CrateBreakArmyDamaged
+#  suffix: damaged
+#  components:
+#  - type: Sprite
+#    state: army_crate-1 # TODO: Make this random between states -1 and -2
+# Aurora's Song | Commenting out Fallout references end
