@@ -1421,3 +1421,76 @@ Entries:
   id: 9539
   time: '2026-06-15T20:48:15.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1151
+- author: AvianMaiden
+  changes:
+    - type: Fix
+      message: Vox are no longer forced to have feather-colored arms and legs
+    - type: Add
+      message: Vox can now have any color scutes they desire.
+  id: 9540
+  time: '2026-06-17T17:35:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1153
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Changed up some tiles and mass scanners around LBK.
+    - type: Add
+      message: Cryosleep pod to LBK.
+    - type: Add
+      message: Occupancy lights to LBK shacks.
+  id: 9541
+  time: '2026-06-18T00:41:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1148
+- author: KieueCaprie
+  changes:
+    - type: Fix
+      message: >-
+        Mimes rejoice (silently!). Mime PDAs now have cartridge parity with the
+        rest of their PDA brethren.
+  id: 9542
+  time: '2026-06-18T02:33:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1150
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: Width slider display in character preview
+  id: 9543
+  time: '2026-06-18T02:46:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1160
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Toggle Internals action on magboots with them now works
+  id: 9544
+  time: '2026-06-18T03:03:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1156
+- author: salamanderskies
+  changes:
+    - type: Fix
+      message: Sofa corners and bench middle pieces can no longer be rotated.
+  id: 9545
+  time: '2026-06-18T03:03:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1158
+- author: snaviian
+  changes:
+    - type: Add
+      message: >-
+        Added 68 new phrases for the AAC tablet, including location names,
+        common words and punctuation.
+  id: 9546
+  time: '2026-06-18T03:38:32.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1069
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: SLE Filled Locker
+  id: 9547
+  time: '2026-06-18T04:30:07.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1125
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: Rechargeable blocking on energy shields is now a thing!
+  id: 9548
+  time: '2026-06-18T04:37:11.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1062
