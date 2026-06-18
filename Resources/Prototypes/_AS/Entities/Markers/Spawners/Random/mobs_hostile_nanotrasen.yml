@@ -167,6 +167,9 @@
   - type: RandomSpawner
     prototypes:
     - MobNTBlueshield
+    rarePrototypes:
+    - MobNTDeathSquad
+    rareChance: 0.01
 
 - type: entity
   name: Nanotrasen DS Spawner
