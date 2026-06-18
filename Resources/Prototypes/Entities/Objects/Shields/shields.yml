@@ -529,7 +529,7 @@
       startingCharge: 60
     - type: BatterySelfRecharger
       autoRechargeRate: 3
-      nextAutoRecharge: 10
+      autoRechargePauseTime: 10
     - type: RechargeableBlocking
       # Aurora's Song End - Rechargeable Blocking
 
