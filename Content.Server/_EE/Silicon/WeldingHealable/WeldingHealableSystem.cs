@@ -92,12 +92,12 @@ public sealed class WeldingHealableSystem : SharedWeldingHealableSystem
 
  private bool HasDamage(DamageableComponent component, WeldingHealingComponent healable)
     {
-        // Aurora's Song - Replace with TryGetValue
+        if (healable.Damage.DamageDict is null)
+            return false;
+
         foreach (var type in healable.Damage.DamageDict)
-        {
-            if (component.Damage.DamageDict.TryGetValue(type.Key, out var value) && value > 0)
+            if (component.Damage.DamageDict[type.Key].Value > 0)
                 return true;
-        }
 
         return false;
     }
