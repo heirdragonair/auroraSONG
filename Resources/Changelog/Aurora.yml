@@ -1510,3 +1510,12 @@ Entries:
   id: 9550
   time: '2026-06-20T02:12:06.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1116
+- author: Zenixic
+  changes:
+    - type: Fix
+      message: >-
+        Fixed the desk bell on the Ceres being superglued to the floor, you can
+        now pick it up.
+  id: 9551
+  time: '2026-06-20T03:35:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1162
