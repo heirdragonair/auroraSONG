@@ -1577,3 +1577,10 @@ Entries:
   id: 9557
   time: '2026-06-24T18:50:04.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1173
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Readded parts to biogenerators that can be upgraded
+  id: 9558
+  time: '2026-06-25T00:16:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1175
