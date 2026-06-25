@@ -124,8 +124,8 @@
           ejectSound: /Audio/Items/unsheath.ogg
           whitelist:
             tags:
-            - Stunbaton
-      smartEquipSelfIfEmpty: true
+            - Baton # Aurora's Song | Corrected to use new tag that is more generic for anything baton shaped
+            - Truncheon # Aurora's Song | Added existing Truncheon tag so you can store that too
     #- type: EmpImmune # The battery aspect is, as far as I know, used as an easily healable way to monitor the shields health, but if energy shields do not get emped, these should not either.
     - type: StaticPrice #Aurora's Song | Give these things a larger value for the vend to grab
       price: 1000

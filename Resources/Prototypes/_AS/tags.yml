@@ -37,6 +37,12 @@
   id: Wringer
 #endregion
 
+#region weapon group tags
+- type: Tag
+  id: Baton
+
+#endregion
+
 #region .30 rifle
 - type: Tag
   id: ASMagazineMarksmanRifle30
