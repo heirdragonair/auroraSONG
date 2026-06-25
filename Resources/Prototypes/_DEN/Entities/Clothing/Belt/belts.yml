@@ -237,7 +237,3 @@
     containers: # #Aurora's Song | Just gave it a standard Secbelt fill, though this webbing isn't used anywhere
       storagebase: !type:NestedSelector
         tableId: BeltSecurityEntityTable
-  - type: ContainerFill
-    containers:
-      radio:
-      - RadioHandheldSecurity
