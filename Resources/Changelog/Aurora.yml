@@ -1584,3 +1584,10 @@ Entries:
   id: 9558
   time: '2026-06-25T00:16:29.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1175
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: foot protectors, and the choice to go shoeless in loadout
+  id: 9559
+  time: '2026-06-25T00:18:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1053
