@@ -61,8 +61,6 @@
     maxAngle: 20
     angleIncrease: 2
     angleDecay: 3
-    ShotsPerBurst: 1
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
 
@@ -114,7 +112,6 @@
     maxAngle: 12
     angleIncrease: 2.5
     angleDecay: 3
-    SelectedMode: FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rifle.ogg
 
@@ -136,7 +133,6 @@
     proto: NFBulletLaserHeavy
     fireCost: 80
   - type: BatterySelfRecharger
-    autoRecharge: true
     autoRechargeRate: 50
   - type: Battery
     maxCharge: 600
@@ -148,8 +144,6 @@
     maxAngle: 12
     angleIncrease: 2.5
     angleDecay: 3
-    ShotsPerBurst: 3
-    SelectedMode: SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
 

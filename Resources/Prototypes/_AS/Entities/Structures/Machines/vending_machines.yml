@@ -246,11 +246,12 @@
 - type: entity
   parent: [BaseStructureDisableAnchoring, VendingMachine]
   id: ASVendingMachineNanoVend
+  abstract: true # This one isn't really meant to be spawned in anyhow
   name: NT Officer Vend
   description: A vending machine for authorised NanoTrasen agents to acquire high tech equipment.
   components:
   - type: VendingMachine
-    pack: ASNanoTrasenOfficerVend
+    pack: ASNanoTrasenOfficerVendA # cus I got rid of the intial pack after finding out I couldn't do a parented setup with them
     offState: off
     brokenState: broken
     normalState: normal-unshaded

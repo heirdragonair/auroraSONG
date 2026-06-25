@@ -33,7 +33,7 @@
         - BallisticAmmoProvider
         - Ammo
         - PowerCell
-        - OnUseTimerTrigger
+        - TimerTrigger # Aurora's Song - OnUseTimerTrigger>TimerTrigger
   - type: ItemMapper
     mapLayers:
       flashbang:
