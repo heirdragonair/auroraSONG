@@ -4,12 +4,12 @@
   startingInventory:
     BlueShieldShield: 1
     GreatswordBlueshield: 1
-    ClothingBlueshieldArmoredKimono: 1
-    ClothingBlueshieldArmoredJacket: 1
-    ClothingBlueshieldArmourVest: 1
-    ClothingBlueshieldArmoredCowboyJacket: 1
-    ASClothingNeckMantleBlueshieldOperative: 1
-    ASClothingHeadHatBeretBlueshield: 1
+    ClothingBlueshieldArmoredKimono: 3
+    ClothingBlueshieldArmoredJacket: 3
+    ClothingBlueshieldArmourVest: 3
+    ClothingBlueshieldArmoredCowboyJacket: 3
+    ASClothingNeckMantleBlueshieldOperative: 3
+    ASClothingHeadHatBeretBlueshield: 3
   emaggedInventory:
     EnergySwordBSO: 1
     ClothingShoesBootsJump: 1
@@ -21,11 +21,11 @@
     MagazineBRDIP15: 2
     MagazineBRDIP15Practice: 2
     MagazineBRDIP15Rubber: 2
-    ClothingBlueshieldArmoredVest: 1
-    ClothingBlueshieldArmoredCoat: 1
-    ClothingBlueshieldArmoredCowboyJacket: 1
-    ASClothingNeckMantleBlueshieldOperative: 1
-    ASClothingHeadHatBeretBlueshield: 1
+    ClothingBlueshieldArmoredVest: 3
+    ClothingBlueshieldArmoredCoat: 3
+    ClothingBlueshieldArmoredCowboyJacket: 3
+    ASClothingNeckMantleBlueshieldOperative: 3
+    ASClothingHeadHatBeretBlueshield: 3
   emaggedInventory:
     MagazineBRDIP15Uranium: 2
     MagazineBRDIP15Incendiary: 2
@@ -38,10 +38,10 @@
     NFMagazineSubMachineGunTopMounted35: 4
     NFMagazineSubMachineGunTopMounted35Rubber: 4
     NFMagazineSubMachineGunTopMounted35Overpressure: 4
-    ClothingBlueshieldArmoredMarine: 1
-    ClothingBlueshieldArmoredCowboyJacket: 1
-    ASClothingNeckMantleBlueshieldOperative: 1
-    ASClothingHeadHatBeretBlueshield: 1
+    ClothingBlueshieldArmoredMarine: 3
+    ClothingBlueshieldArmoredCowboyJacket: 3
+    ASClothingNeckMantleBlueshieldOperative: 3
+    ASClothingHeadHatBeretBlueshield: 3
   emaggedInventory:
     NFMagazineSubMachineGunTopMounted35Incendiary: 2
     NFMagazineSubMachineGunTopMounted35Uranium: 2
@@ -52,15 +52,15 @@
   id: ASNanoTrasenOfficerVendD
   startingInventory:
     ASWeaponEnergyPistolPulseExpedition: 2
-    ClothingOuterArmorCaptainRepeller: 1
-    ClothingNeckCloakCaptaingreatcoat: 1
-    ClothingShoesBootsCaptainjumpboots: 1
-    ClothingEyesGlassesCaptainvisor: 1
-    ClothingHandsGlovesCaptainflightgloves: 1
-    ClothingHeadHatCaptaincrushercap: 1
-    ClothingBackpackDuffelCommandveteran: 1
-    ClothingBackpackSatchelCommandveteran: 1
-    ClothingBackpackCommandveteran: 1
+    ClothingOuterArmorCaptainRepeller: 2
+    ClothingNeckCloakCaptaingreatcoat: 3
+    ClothingShoesBootsCaptainjumpboots: 3
+    ClothingEyesGlassesCaptainvisor: 3
+    ClothingHandsGlovesCaptainflightgloves: 3
+    ClothingHeadHatCaptaincrushercap: 3
+    ClothingBackpackDuffelCommandveteran: 3
+    ClothingBackpackSatchelCommandveteran: 3
+    ClothingBackpackCommandveteran: 3
   emaggedInventory:
     ClothingShoesBootsJump: 1
 
