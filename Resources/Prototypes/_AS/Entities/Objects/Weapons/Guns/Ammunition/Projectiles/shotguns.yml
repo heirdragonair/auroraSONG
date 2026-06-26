@@ -11,6 +11,37 @@
         Piercing: 15
         Structural: 15
 
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: ASProjectileSlug8g
+  name: slug (8g)
+  description: If you're seeing this, you're dead.
+  parent: NFBasePellet
+  components:
+  - type: Projectile
+    damage:
+      types: # 50% more damage across board than 12g
+        Piercing: 60
+        Structural: 23
+
+- type: entity
+  id: AS8g
+  name: blast grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: slug
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 75 # a ~2 tile radius
+    intensitySlope: 5
+    maxIntensity: 10
+    canCreateVacuum: false
+
 #region Spread patterns
 - type: entity
   id: ASPelletLowShotgunSpread

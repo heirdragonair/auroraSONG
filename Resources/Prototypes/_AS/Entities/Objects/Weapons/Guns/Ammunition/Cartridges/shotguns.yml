@@ -23,3 +23,31 @@
     proto: ASPelletShotgunSpread8g
   - type: SpentAmmoVisuals
     state: "base"
+
+- type: entity
+  id: AS8gShellSlug
+  name: shell (8g slug)
+  parent: ASBaseShellShotgun8g
+  components:
+  - type: Sprite
+    layers:
+    - state: slug
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: ASProjectileSlug8g
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: AS8gShellHE
+  name: shell (8g HE)]
+  parent: ASBaseShellShotgun8g
+  components:
+  - type: Sprite
+    layers:
+    - state: slug
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: ASProjectileSlug8g
+  - type: SpentAmmoVisuals
+    state: "slug"
