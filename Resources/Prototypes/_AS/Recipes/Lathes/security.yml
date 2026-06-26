@@ -179,7 +179,7 @@
   id: ASMagazineEnblocRifle30LongEmpty
   result: ASMagazineEnblocRifle30LongEmpty
   materials:
-    Steel: 15
+    Steel: 20
 
 - type: latheRecipe
   parent: BaseFilledMagazineRecipe
@@ -193,7 +193,7 @@
   id: ASSpeedLoaderRifle30LongEmpty
   result: ASSpeedLoaderRifle30LongEmpty
   materials:
-    Steel: 10
+    Steel: 20
 
 - type: latheRecipe
   parent: BaseFilledMagazineRecipe
