@@ -5,4 +5,7 @@
   defaultHostile: true
 
 - type: npcFaction
-  id: ColonialCommandClothing
+  id: ColonialCommand
+
+- type: npcFaction # updated faction for non command equipment that CDETs shouldn't shoot at
+  id: AuroranColony
