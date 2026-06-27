@@ -379,7 +379,7 @@ namespace Content.Client.IconSmoothing
             for (var i = 0; i < neighbors.Length; i++)
             {
                 var neighbor = (Vector2i)rotation.RotateVec(neighbors[i]);
-                if (MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos + neighbor), smoothQuery, neighbor))
+                if (MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos + neighbor), neighbor)) // Frontier
                     value |= 1 << i;
             }
 
@@ -387,7 +387,7 @@ namespace Content.Client.IconSmoothing
             if (value == 3)
             {
                 var neighbor = (Vector2i)rotation.RotateVec(new(1, -1));
-                if (MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos + neighbor), smoothQuery, neighbor))
+                if (MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos + neighbor), neighbor)) // Frontier
                     value = 4;
             }
 

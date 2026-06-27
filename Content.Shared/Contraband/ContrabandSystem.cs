@@ -127,7 +127,7 @@ public sealed partial class ContrabandSystem : EntitySystem
         return Loc.GetString("contraband-examine-text-Restricted-department", ("departments", list), ("type", itemType), ("color", color.ToHex()));
     }
 
-    private FormattedMessage GetContrabandExamine(string severity, string deptMessage, string carryMessage) // Frontier: add severity, optional deptMessage
+    private FormattedMessage GetContrabandExamine(string severity, string? deptMessage, string? carryMessage) // Frontier: add severity, optional deptMessage
     {
         var msg = new FormattedMessage();
 

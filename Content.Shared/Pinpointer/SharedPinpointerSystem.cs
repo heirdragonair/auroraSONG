@@ -39,7 +39,7 @@ public abstract partial class SharedPinpointerSystem : EntitySystem
             return;
 
         // Frontier: disallow pinpointing mobs
-        if (!component.CanTargetMobs && HasComp<MobStateComponent>(args.Target))
+        if (!ent.Comp.CanTargetMobs && HasComp<MobStateComponent>(args.Target))
             return;
 
         // TODO add doafter once the freeze is lifted
@@ -51,8 +51,8 @@ public abstract partial class SharedPinpointerSystem : EntitySystem
         // if (ent.Comp.UpdateTargetName)
         //     ent.Comp.TargetName = ent.Comp.Target == null ? null : Identity.Name(ent.Comp.Target.Value, EntityManager);
 
-        var daArgs = new DoAfterArgs(EntityManager, args.User, TimeSpan.FromSeconds(component.RetargetDoAfter),
-            new PinpointerDoAfterEvent(), uid, args.Target, uid)
+        var daArgs = new DoAfterArgs(EntityManager, args.User, TimeSpan.FromSeconds(ent.Comp.RetargetDoAfter),
+            new PinpointerDoAfterEvent(), ent, args.Target, ent)
         {
             BreakOnDamage = true,
             BreakOnWeightlessMove = true,
@@ -111,14 +111,14 @@ public abstract partial class SharedPinpointerSystem : EntitySystem
         {
             if (TryComp<PinpointerTargetComponent>(pinpointer.Target, out var pinpointerTarget))
             {
-                pinpointerTarget.Entities.Remove(uid);
+                pinpointerTarget.Entities.Remove(ent);
                 if (pinpointerTarget.Entities.Count <= 0)
                     RemComp<PinpointerTargetComponent>(pinpointer.Target.Value);
             }
             if (target != null)
             {
                 pinpointerTarget = EnsureComp<PinpointerTargetComponent>(target.Value);
-                pinpointerTarget.Entities.Add(uid);
+                pinpointerTarget.Entities.Add(ent);
             }
         }
         // End Frontier: two-way pinpointer tracking

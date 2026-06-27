@@ -305,7 +305,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     /// </summary>
     public EntityCoordinates ClampCoordinatesToFTLRange(EntityUid shuttleUid, EntityCoordinates coordinates)
     {
-        if (!_physicsQuery.TryGetComponent(shuttleUid, out var shuttlePhysics) || !_xformQuery.TryGetComponent(shuttleUid, out var shuttleTransform))
+        if (!_physicsQuery.TryGetComponent(shuttleUid, out var shuttlePhysics)) // Aurora's Song - Use Transform(EntityUid) instead
             return coordinates;
 
         var targetMapCoordinates = XformSystem.ToMapCoordinates(coordinates);
@@ -314,7 +314,7 @@ public abstract partial class SharedShuttleSystem : EntitySystem
             return coordinates;
 
         var targetPosition = targetMapCoordinates.Position;
-        var shuttlePosition = Maps.GetGridPosition((shuttleUid, shuttlePhysics, shuttleTransform));
+        var shuttlePosition = Maps.GetGridPosition((shuttleUid, shuttlePhysics, Transform(shuttleUid))); // Aurora's Song - Use Transform(EntityUid) instead
 
         var shuttleToTarget = targetPosition - shuttlePosition;
 

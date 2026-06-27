@@ -213,7 +213,7 @@ namespace Content.Client.Cargo.UI
                 if (order.Approved)
                     continue;
 
-                var product = _protoManager.Index<EntityPrototype>(order.ProductId);
+                var product = _protoManager.Index<EntityPrototype>(order.Product);
                 var productName = product.Name;
                 var account = _protoManager.Index(order.Account);
 

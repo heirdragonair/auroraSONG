@@ -18,6 +18,7 @@ using Content.Shared._NF.Atmos.Systems;
 using Content.Shared._NF.Atmos.Visuals;
 using Content.Shared._NF.Bank.Components;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Components; // Aurora's Song
 using Content.Shared.Atmos.Piping.Binary.Components;
 using Content.Shared.Coordinates;
 using Content.Shared.Construction.Components;

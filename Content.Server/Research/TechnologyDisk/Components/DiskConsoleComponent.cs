@@ -1,5 +1,6 @@
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype; // Frontier
 
 namespace Content.Server.Research.TechnologyDisk.Components;
 
