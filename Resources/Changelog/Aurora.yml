@@ -1663,3 +1663,10 @@ Entries:
   id: 9568
   time: '2026-06-29T18:00:38.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1186
+- author: CombustibleToast
+  changes:
+    - type: Tweak
+      message: Site Workers and Site Managers can now equip foot protectors.
+  id: 9569
+  time: '2026-06-29T18:06:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1190
