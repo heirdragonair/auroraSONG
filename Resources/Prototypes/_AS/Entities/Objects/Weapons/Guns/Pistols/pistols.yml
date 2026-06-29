@@ -93,7 +93,7 @@
   - type: Gun
     burstFireRate: 15
     shotsPerBurst: 3
-    burstCooldown: 1
+    burstCooldown: 0.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
