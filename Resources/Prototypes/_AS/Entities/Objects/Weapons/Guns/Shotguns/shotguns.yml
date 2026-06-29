@@ -96,6 +96,10 @@
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
 
 - type: entity
+  parent: [BaseC2ContrabandUnredeemable, ASWeaponShotgunLeverChester]
+  id: ASWeaponShotgunLeverChesterRegistered
+
+- type: entity
   parent: [ BaseC2ContrabandUnredeemable, NFBaseWeaponShotgunChamber12g, NFBaseWeaponFrameShotgunNanotrasen ] # Parented to Nanotrasen shotgun, as it's a modified enforcer
   id: ASWeaponShotgunHushpup
   name: Hushpup

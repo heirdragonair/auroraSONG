@@ -52,7 +52,7 @@
 
 - type: entity
   id: ASAmmunitionBoxShellShotgun8gHE
-  parent: ASBaseAmmunitionBoxShellShotgun8g
+  parent: [ASBaseAmmunitionBoxShellShotgun8g, BaseC3ContrabandUnredeemable]
   name: shell box (8g HE)
   components:
   - type: BallisticAmmoProvider

@@ -411,9 +411,7 @@
   id: NFWeaponShotgunBulldogExpedition
 
 - type: entity # Aurora's Song | Lever action shotgun with NT branding, 8 gauge.
-  parent:
-  - BaseExpeditionWeaponTier4NanoTrasen
-  - ASWeaponShotgunLeverChester
+  parent: [C2ContrabandUnregistered, BaseExpeditionWeaponTier4NanoTrasen, ASWeaponShotgunLeverChester]
   categories: [ HideSpawnMenu ]
   id: ASWeaponShotgunLeverChesterExpedition
 
