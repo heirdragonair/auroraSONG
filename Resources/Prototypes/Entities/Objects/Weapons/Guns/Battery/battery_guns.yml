@@ -902,7 +902,7 @@
     startingCharge: 480
 
 - type: entity
-  name: energy magnum
+  name: energy magnum # Aurora's Song | A lot of the edits made to this prototype are of no real import as I had to make my own implementation under our namespace
   parent: [BaseWeaponBatterySmall, BaseC3NanoTrasenContraband] # Aurora's Song | BaseGrandTheftContraband<BaseC2ContrabandUnredeemable<BaseCeNanoTrasenContraband
   id: WeaponEnergyMagnum
   description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, window piercing, or non-lethal disabling.

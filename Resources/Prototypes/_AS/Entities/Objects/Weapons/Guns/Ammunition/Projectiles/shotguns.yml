@@ -26,7 +26,7 @@
 
 - type: entity
   id: ASProjectileSlug8gHE
-  name: blast grenade
+  name: blast slug
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
@@ -37,7 +37,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 75 # a ~2 tile radius
+    totalIntensity: 40
     intensitySlope: 5
     maxIntensity: 10
     canCreateVacuum: false

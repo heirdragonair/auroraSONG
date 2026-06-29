@@ -21,6 +21,8 @@
     sprite: _Goobstation/Clothing/Head/Hardsuits/blueshield.rsi
   - type: PointLight
     color: "#57b9ff"
+    radius: 7
+    energy: 5
   - type: PressureProtection
     highPressureMultiplier: 0.45
     lowPressureMultiplier: 1000
