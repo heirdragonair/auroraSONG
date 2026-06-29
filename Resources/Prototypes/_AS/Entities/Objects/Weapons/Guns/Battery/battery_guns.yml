@@ -492,3 +492,49 @@
     startingCharge: 1500
   - type: StaticPrice
     price: 10000
+
+- type: entity
+  id: ASWeaponEnergyCharonMagnum
+  parent: [ ASBaseWeaponManufacturerNanoTrasen, ASBaseWeaponFrameEnergyPistolHighCap, BaseC3NanoTrasenContraband]
+  name: Mk.II charon magnum
+  suffix: Aurora's Song
+  description: |-
+    Multiple fire modes, a sleek chassis, the Mk.II charon is an effective attempt to miniaturise the firing system of the energy shotgun and specialise it for new enagement profiles.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-unshaded-1
+      visible: false
+      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      shader: unshaded
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: true
+  - type: Appearance
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: BatteryAmmoProvider
+    proto: ASBulletLaserMagnum
+    fireCost: 140
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: ASBulletLaserMagnum
+      fireCost: 140 # 2 seconds to regen per shot in this mode
+    - proto: ASBulletLaserWindowPiercingMagnum
+      fireCost: 140 # 2 seconds to regen per shot in this mode
+    - proto: NFBulletDisabler
+      fireCost: 80 # 1.1428 seconds to regen per shot in this mode
+      pacifismAllowedMode: true
+  - type: BatterySelfRecharger
+    autoRechargeRate: 70
+    autoRechargePauseTime: 6

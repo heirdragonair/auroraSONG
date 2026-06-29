@@ -232,7 +232,7 @@
       prob: 0.8
     - id: EncryptionKeyNanotrasen
     - id: JetpackSecurityFilled
-    - id: WeaponEnergyMagnum
+    - id: ASWeaponEnergyCharonMagnum
       prob: 0.05
     - id: SpawnDungeonLootMaterialsBasicFull
       prob: 0.5
