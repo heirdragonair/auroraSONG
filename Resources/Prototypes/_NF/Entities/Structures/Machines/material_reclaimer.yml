@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ SolutionDrain, SolutionGinormous, BaseMachinePowered, ConstructibleMachine ] # Aurora's Song - Use built-in solutions
+  parent: [ SolutionGinormous, BaseMachinePowered, ConstructibleMachine ] # Aurora's Song - Use built-in solutions
   id: MaterialReclaimer
   name: material reclaimer
   description: Cannot reclaim immaterial things, like motivation.
@@ -91,7 +91,7 @@
         maxDistance: 5
         loop: true
     useOldSolutionLogic: true
-    solutionContainerId: drainBuffer # Aurora's Song - Use built-in solutions
+    solutionContainerId: solution # Aurora's Song - Use built-in solutions
   - type: MaterialStorage
     insertOnInteract: false
   - type: ContainerContainer
@@ -100,9 +100,9 @@
       machine_board: !type:Container
       machine_parts: !type:Container
   - type: DrainableSolution
-    solution: drainBuffer # Aurora's Song - Use built-in solutions
+    solution: solution # Aurora's Song - Use built-in solutions
   - type: ExaminableSolution
-    solution: drainBuffer # Aurora's Song - Use built-in solutions
+    solution: solution # Aurora's Song - Use built-in solutions
   - type: StaticPrice
     price: 500
   - type: ApcPowerReceiver

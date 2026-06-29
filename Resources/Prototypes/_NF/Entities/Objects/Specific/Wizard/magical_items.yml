@@ -7,13 +7,11 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/teapot.rsi # placeholder
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 100
-        reagents:
-        - ReagentId: Tea
-          Quantity: 100
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      reagents:
+      - ReagentId: Tea
+        Quantity: 100
   - type: SolutionRegeneration
     solution: drink
     generated:
@@ -46,13 +44,12 @@
     sprite: _NF/Objects/Consumable/Smokeables/Pipes/cobpipe.rsi
   - type: BurnStateVisuals
     unlitIcon: unlit-icon
-  - type: SolutionContainerManager
-    solutions:
-      smokable:
-        maxVol: 0.3
-        reagents:
-        - ReagentId: THC
-          Quantity: 0.3
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      maxVol: 0.3
+      reagents:
+      - ReagentId: THC
+        Quantity: 0.3
   - type: SolutionRegeneration
     solution: smokable
     generated:
@@ -84,13 +81,12 @@
     sprite: Objects/Consumable/Smokeables/Pipes/pipe.rsi
   - type: BurnStateVisuals
     unlitIcon: unlit-icon
-  - type: SolutionContainerManager
-    solutions:
-      smokable:
-        maxVol: 0.3
-        reagents:
-        - ReagentId: Nicotine
-          Quantity: 0.3
+  - type: Solution # Aurora's Song - Convert to solution
+    solution:
+      maxVol: 0.3
+      reagents:
+      - ReagentId: Nicotine
+        Quantity: 0.3
   - type: SolutionRegeneration
     solution: smokable
     generated:
