@@ -22,10 +22,10 @@
 - type: damageModifierSet
   id: MobHostileNanoTrasenDamageModifierHard
   coefficients: # Abandon all hope, the Death Squad have entered
-    Blunt: 0.2
-    Slash: 0.2
-    Piercing: 0.2
-    Heat: 0.2
-    Radiation: 0.2
+    Blunt: 0.3
+    Slash: 0.3
+    Piercing: 0.3
+    Heat: 0.3
+    Radiation: 0.3
     Poison: 0.5
     Caustic: 0.4
