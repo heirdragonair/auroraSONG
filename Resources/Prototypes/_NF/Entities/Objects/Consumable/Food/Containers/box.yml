@@ -175,8 +175,8 @@
           - id: FoodCondimentPacketKetchup
             weight: 0.25
         # Extra
-#        - id: FoodCondimentPacketPepper
-#        - id: FoodCondimentPacketSalt # Aurora's Song - Disabled to fix heisentest
+        - id: FoodCondimentPacketPepper
+        - id: FoodCondimentPacketSalt
 
 - type: entity
   parent: [BaseStorageItem, BaseBagOpenClose]

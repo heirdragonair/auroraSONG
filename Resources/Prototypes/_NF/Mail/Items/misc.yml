@@ -18,6 +18,8 @@
   abstract: true
   components:
   - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
 
 - type: entity
   id: DelayedSmoke

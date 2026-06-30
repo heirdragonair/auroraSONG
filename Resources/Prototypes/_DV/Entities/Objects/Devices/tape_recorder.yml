@@ -78,6 +78,8 @@
   - type: Item
     size: Tiny
   - type: Damageable
+  - type: Injurable # Aurora's Song
+    damageContainer: Inorganic
   - type: TapeCassette
     maxCapacity: 180
     repairWhitelist:
