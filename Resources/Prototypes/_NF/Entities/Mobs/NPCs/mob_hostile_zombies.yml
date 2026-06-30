@@ -60,8 +60,7 @@
     solutions:
       melee:
         maxVol: 20
-  - type: SolutionRegeneration
-    solution: melee
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: NFZombieBiteToxin # ~3-4 bites - slow down, ~8-9 bites - poison damage
@@ -475,8 +474,7 @@
         Cold: 4
         Slash: 6
         Structural: 45
-  - type: SolutionRegeneration
-    solution: melee
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Fresium

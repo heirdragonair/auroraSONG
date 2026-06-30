@@ -21,8 +21,7 @@
     materialComposition:
       Steel: 80
       Bluespace: 20
-  - type: SolutionRegeneration
-    solution: spray
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water

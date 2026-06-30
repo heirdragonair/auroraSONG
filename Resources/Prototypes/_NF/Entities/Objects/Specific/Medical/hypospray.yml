@@ -436,8 +436,7 @@
     - state: fill-1
       visible: false
       map: [ enum.SolutionContainerLayers.Fill ]
-  - type: SolutionRegeneration
-    solution: hypospray
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Tricordrazine
@@ -458,8 +457,7 @@
     - state: fill-1
       visible: false
       map: [ enum.SolutionContainerLayers.Fill ]
-  - type: SolutionRegeneration
-    solution: hypospray
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Inaprovaline

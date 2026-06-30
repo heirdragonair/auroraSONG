@@ -145,8 +145,7 @@
         reagents:
         - ReagentId: Water
           Quantity: 200
-  - type: SolutionRegeneration
-    solution: toilet
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
@@ -165,8 +164,7 @@
           Quantity: 180
         - ReagentId: GastroToxin
           Quantity: 20
-  - type: SolutionRegeneration
-    solution: toilet
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
@@ -187,8 +185,7 @@
           Quantity: 180
         - ReagentId: GastroToxin
           Quantity: 20
-  - type: SolutionRegeneration
-    solution: toilet
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
@@ -231,8 +228,7 @@
 #        reagents:
 #        - ReagentId: Water
 #          Quantity: 200
-#  - type: SolutionRegeneration
-#    solution: tank
+#  - type: SolutionRegeneration # Aurora's Song - Removed solution property
 #    generated:
 #      reagents:
 #      - ReagentId: Water
@@ -251,8 +247,7 @@
 #        reagents:
 #        - ReagentId: WaterDirty
 #          Quantity: 200
-#  - type: SolutionRegeneration
-#    solution: tank
+#  - type: SolutionRegeneration # Aurora's Song - Removed solution property
 #    generated:
 #      reagents:
 #      - ReagentId: WaterDirty
@@ -271,8 +266,7 @@
 #        reagents:
 #        - ReagentId: WaterIrradiated
 #          Quantity: 200
-#  - type: SolutionRegeneration
-#    solution: tank
+#  - type: SolutionRegeneration # Aurora's Song - Removed solution property
 #    generated:
 #      reagents:
 #      - ReagentId: WaterIrradiated

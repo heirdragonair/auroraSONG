@@ -12,14 +12,12 @@
       reagents:
       - ReagentId: Tea
         Quantity: 100
-  - type: SolutionRegeneration
-    solution: drink
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Tea
         Quantity: 5
-  - type: SolutionPurge
-    solution: drink
+  - type: SolutionPurge # Aurora's Song - Removed solution property
     preserve:
     - Tea
     quantity: 10
@@ -50,14 +48,12 @@
       reagents:
       - ReagentId: THC
         Quantity: 0.3
-  - type: SolutionRegeneration
-    solution: smokable
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: THC
         Quantity: 0.3
-  - type: SolutionPurge
-    solution: smokable
+  - type: SolutionPurge # Aurora's Song - Removed solution property
     preserve:
     - THC
     quantity: 0.3
@@ -87,14 +83,12 @@
       reagents:
       - ReagentId: Nicotine
         Quantity: 0.3
-  - type: SolutionRegeneration
-    solution: smokable
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Nicotine
         Quantity: 0.3
-  - type: SolutionPurge
-    solution: smokable
+  - type: SolutionPurge # Aurora's Song - Removed solution property
     preserve:
     - Nicotine
     quantity: 0.3

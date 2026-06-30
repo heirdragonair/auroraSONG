@@ -66,8 +66,7 @@
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
-  - type: SolutionRegeneration
-    solution: tank
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
@@ -86,8 +85,7 @@
         reagents:
         - ReagentId: Water
           Quantity: 500
-  - type: SolutionRegeneration
-    solution: tank
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
@@ -106,8 +104,7 @@
         reagents:
         - ReagentId: Water
           Quantity: 500
-  - type: SolutionRegeneration
-    solution: tank
+  - type: SolutionRegeneration # Aurora's Song - Removed solution property
     generated:
       reagents:
       - ReagentId: Water
