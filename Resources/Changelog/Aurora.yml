@@ -1628,3 +1628,63 @@ Entries:
   id: 9563
   time: '2026-06-25T01:32:41.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1170
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: Artifacts will now only teleport people from 100 meters away.
+  id: 9564
+  time: '2026-06-26T12:43:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1183
+- author: DevilishMilk
+  changes:
+    - type: Fix
+      message: Techfabs now have proper sprites for crafting
+  id: 9565
+  time: '2026-06-26T20:31:40.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1184
+- author: DevilishMilk
+  changes:
+    - type: Fix
+      message: CDETs should no longer target people wearing debranded hardsuits.
+  id: 9566
+  time: '2026-06-26T20:38:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1168
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Exped FTL mass check from 150 meters to 50
+  id: 9567
+  time: '2026-06-29T16:48:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1192
+- author: salamanderskies
+  changes:
+    - type: Tweak
+      message: Prayers and engravings can now be longer.
+  id: 9568
+  time: '2026-06-29T18:00:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1186
+- author: CombustibleToast
+  changes:
+    - type: Tweak
+      message: Site Workers and Site Managers can now equip foot protectors.
+  id: 9569
+  time: '2026-06-29T18:06:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1190
+- author: Dizzy-Eevee
+  changes:
+    - type: Fix
+      message: Sheleg and IPCs can no longer be injected with syringes/hyposprays.
+  id: 9570
+  time: '2026-06-29T19:24:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1188
+- author: solstar
+  changes:
+    - type: Add
+      message: ITS REAL! (persistence)
+    - type: Tweak
+      message: Added canon time and id number to pda display.
+    - type: Add
+      message: more to come...
+  id: 9571
+  time: '2026-07-01T06:28:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1172
