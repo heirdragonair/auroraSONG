@@ -1695,3 +1695,10 @@ Entries:
   id: 9572
   time: '2026-07-02T02:50:03.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1164
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Feroxi can now eat sausage
+  id: 9573
+  time: '2026-07-02T04:37:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1193
