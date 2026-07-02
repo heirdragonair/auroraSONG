@@ -1709,3 +1709,10 @@ Entries:
   id: 9574
   time: '2026-07-02T04:38:03.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1191
+- author: BudaLope
+  changes:
+    - type: Fix
+      message: Wrenches and drills no longer try to anchor worn bags
+  id: 9575
+  time: '2026-07-02T04:41:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1194
