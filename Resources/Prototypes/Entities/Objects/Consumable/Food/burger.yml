@@ -382,7 +382,7 @@
       - ReagentId: Nutriment
         Quantity: 45
       - ReagentId: Protein
-        Quantity: 8 # Frontier: 10<8
+        Quantity: 10
       - ReagentId: Flavorol # Frontier
         Quantity: 7 # Frontier
   - type: Tag

@@ -17,7 +17,7 @@
     solution:
       reagents: #Most of these are this with slight variations, not worth changing until we have the rest of the reagents
       - ReagentId: Nutriment
-        Quantity: 32 # Frontier: 30<20 # Aurora's Song - 64>32
+        Quantity: 64
       - ReagentId: Vitamin
         Quantity: 8
       - ReagentId: Sugar

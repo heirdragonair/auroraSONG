@@ -15,9 +15,9 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 30 # Frontier 40<20 # Aurora's Song 60>30
+        Quantity: 60
       - ReagentId: Vitamin
-        Quantity: 5 # Frontier: 5<10
+        Quantity: 10
       - ReagentId: Sugar
         Quantity: 10
       - ReagentId: Flavorol # Frontier
@@ -602,7 +602,7 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 30 # Frontier: 20<10 # Aurora's Song 60>30
+        Quantity: 60
       - ReagentId: Vitamin
         Quantity: 10
       - ReagentId: Sugar
@@ -784,9 +784,9 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 42 # Frontier: 35<15 # Aurora's Song 84>42
+        Quantity: 84
       - ReagentId: Vitamin
-        Quantity: 10 # Frontier: 16<10
+        Quantity: 16
       - ReagentId: Sugar
         Quantity: 10
       - ReagentId: Flavorol # Frontier
@@ -818,7 +818,7 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 3 # Frontier: 7<3 # Aurora's Song
+        Quantity: 7
       - ReagentId: Vitamin
         Quantity: 2
       - ReagentId: Sugar
@@ -1130,11 +1130,11 @@
     solution:
       reagents:
       - ReagentId: Nutriment
-        Quantity: 50 # Frontier: 80<50 # Aurora's Song 120>60
+        Quantity: 120
       - ReagentId: Vitamin
         Quantity: 20
       - ReagentId: Sugar
-        Quantity: 25 # Frontier: 30<10 # Aurora's Song 50>25
+        Quantity: 50
       - ReagentId: Plasma
         Quantity: 10
       - ReagentId: Flavorol # Frontier
