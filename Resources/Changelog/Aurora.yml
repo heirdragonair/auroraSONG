@@ -1730,3 +1730,10 @@ Entries:
   id: 9577
   time: '2026-07-02T04:49:42.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1198
+- author: Dizzy-Eevee
+  changes:
+    - type: Fix
+      message: Harpies can no longer be wingless.
+  id: 9578
+  time: '2026-07-04T03:08:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1207
