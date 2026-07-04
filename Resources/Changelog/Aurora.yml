@@ -1737,3 +1737,12 @@ Entries:
   id: 9578
   time: '2026-07-04T03:08:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1207
+- author: WallflowerGhost
+  changes:
+    - type: Tweak
+      message: >-
+        Made a series of mini changes to Port Boreal and The Alley. Look for the
+        PR for exact details.
+  id: 9579
+  time: '2026-07-04T16:21:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1201
