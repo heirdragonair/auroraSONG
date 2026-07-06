@@ -22,7 +22,7 @@ public sealed partial class CartridgeLoaderSystem
         RelayEvent((uid, component), args);
     }
 
-    public void RefRelayEvent<T>(Entity<CartridgeLoaderComponent> ent, ref T args, bool foregroundOnly = false) where T : struct
+    public void RefRelayEvent<T>(Entity<CartridgeLoaderComponent> ent, ref T args, bool foregroundOnly = true) where T : struct // Aurora's Song - Set foreground only to true
     {
         var ev = new CartridgeRelayedEvent<T>(ent, args);
         if (foregroundOnly)
@@ -40,7 +40,7 @@ public sealed partial class CartridgeLoaderSystem
         args = ev.Args;
     }
 
-    public void RelayEvent<T>(Entity<CartridgeLoaderComponent> ent, T args, bool foregroundOnly = false) where T : class
+    public void RelayEvent<T>(Entity<CartridgeLoaderComponent> ent, T args, bool foregroundOnly = true) where T : class // Aurora's Song - Set foreground only to true
     {
         var ev = new CartridgeRelayedEvent<T>(ent, args);
         if (foregroundOnly)

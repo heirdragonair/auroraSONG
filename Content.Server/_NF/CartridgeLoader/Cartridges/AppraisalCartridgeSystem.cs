@@ -43,9 +43,8 @@ public sealed partial class AppraisalCartridgeSystem : EntitySystem
 
     private void OnCartridgeDeactivated(Entity<AppraisalCartridgeComponent> ent, ref CartridgeDeactivatedEvent args)
     {
-        var parent = Transform(args.Loader).ParentUid;
-        RemComp<PriceGunComponent>(parent);
-        RemComp<UseDelayComponent>(parent);
+        RemComp<PriceGunComponent>(args.Loader);
+        RemComp<UseDelayComponent>(args.Loader);
     }
 
     /// <summary>
