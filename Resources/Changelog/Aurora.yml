@@ -1759,3 +1759,14 @@ Entries:
   id: 9580
   time: '2026-07-06T00:31:50.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1196
+- author: Sunburstschitin
+  changes:
+    - type: Add
+      message: >-
+        Added four different lunchboxes, an extra large vacuum flask, and a toy
+        belt for your beloved plushies!
+    - type: Tweak
+      message: Resprited the vacuum flask to match the XL one.
+  id: 9581
+  time: '2026-07-06T00:56:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1212
