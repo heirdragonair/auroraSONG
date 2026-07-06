@@ -1865,3 +1865,10 @@ Entries:
   id: 9592
   time: '2026-07-06T03:31:39.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1211
+- author: Sunburstschitin
+  changes:
+    - type: Add
+      message: Added grass decals to the spray painter!
+  id: 9593
+  time: '2026-07-06T10:49:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1219
