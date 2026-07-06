@@ -270,7 +270,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: Oil
-        Quantity: 300
+        Quantity: 600
   - type: BlockInjection
     #blockHypospray: true # Aurora's Song: This field is broken and thus no longer used
     blockInjectOnProjectile: true

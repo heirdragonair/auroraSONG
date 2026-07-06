@@ -150,7 +150,7 @@
     bloodReferenceSolution:
       reagents:
       - ReagentId: AmmoniaBlood
-        Quantity: 300
+        Quantity: 600 # Aurora's Song - 300>600 - Solution refactor
   - type: EmpVulnerable
 
 
