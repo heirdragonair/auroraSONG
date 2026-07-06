@@ -1797,3 +1797,12 @@ Entries:
   id: 9584
   time: '2026-07-06T01:21:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1166
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: >-
+        Diagonal shuttle windows are now constructable, and interior shuttle
+        walls now show up in the construction menu.
+  id: 9585
+  time: '2026-07-06T01:27:41.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1176
