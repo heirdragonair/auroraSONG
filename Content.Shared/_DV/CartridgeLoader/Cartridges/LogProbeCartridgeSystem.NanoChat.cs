@@ -2,9 +2,10 @@ using Content.Shared.Audio;
 using Content.Shared.CartridgeLoader;
 using Content.Shared._DV.CartridgeLoader.Cartridges;
 using Content.Shared._DV.NanoChat;
+using Content.Shared.Interaction; // Aurora's Song
 using Robust.Shared.Random;
 
-namespace Content.Server.CartridgeLoader.Cartridges;
+namespace Content.Shared.CartridgeLoader.Cartridges; // Aurora's Song - Move to shared
 
 public sealed partial class LogProbeCartridgeSystem
 {
@@ -61,15 +62,15 @@ public sealed partial class LogProbeCartridgeSystem
     }
 
     private void ScanNanoChatCard(Entity<LogProbeCartridgeComponent> ent,
-        CartridgeAfterInteractEvent args,
+        CartridgeRelayedEvent<AfterInteractEvent> args, // Aurora's Song - Use relayed event
         EntityUid target,
         NanoChatCardComponent card)
     {
         _audio.PlayEntity(ent.Comp.SoundScan,
-            args.InteractEvent.User,
+            args.Args.User, // Aurora's Song - HandledEvent>Args
             target,
             AudioHelpers.WithVariation(0.25f, _random));
-        _popup.PopupCursor(Loc.GetString("log-probe-scan-nanochat", ("card", target)), args.InteractEvent.User);
+        _popup.PopupCursor(Loc.GetString("log-probe-scan-nanochat", ("card", target)), args.Args.User); // Aurora's Song - HandledEvent>Args
 
         ent.Comp.PulledAccessLogs.Clear();
 

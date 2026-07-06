@@ -3,6 +3,7 @@ using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
 using Content.Shared.Timing;
 using Content.Shared.Cargo.Components;
+using Content.Shared.Interaction; // Aurora's Song
 
 namespace Content.Server.CartridgeLoader.Cartridges;
 
@@ -18,7 +19,7 @@ public sealed partial class AppraisalCartridgeSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<AppraisalCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
-        SubscribeLocalEvent<AppraisalCartridgeComponent, CartridgeAfterInteractEvent>(AfterInteract);
+        SubscribeLocalEvent<AppraisalCartridgeComponent, CartridgeRelayedEvent<AfterInteractEvent>>(AfterInteract);
         SubscribeLocalEvent<AppraisalCartridgeComponent, CartridgeActivatedEvent>(OnCartridgeActivated);
         SubscribeLocalEvent<AppraisalCartridgeComponent, CartridgeDeactivatedEvent>(OnCartridgeDeactivated);
     }
@@ -53,13 +54,13 @@ public sealed partial class AppraisalCartridgeSystem : EntitySystem
     /// <br/>
     /// Does the thing... TODO
     /// </summary>
-    private void AfterInteract(EntityUid uid, AppraisalCartridgeComponent component, CartridgeAfterInteractEvent args)
+    private void AfterInteract(EntityUid uid, AppraisalCartridgeComponent component, CartridgeRelayedEvent<AfterInteractEvent> args) // Aurora's Song - Use relayed event
     {
-        if (args.InteractEvent.Handled || !args.InteractEvent.CanReach || !args.InteractEvent.Target.HasValue)
+        if (args.Args.Handled || !args.Args.CanReach || !args.Args.Target.HasValue) // Aurora's Song - HandledEvent>Args
             return;
 
-        var target = args.InteractEvent.Target;
-        var who = args.InteractEvent.User;
+        var target = args.Args.Target; // Aurora's Song - HandledEvent>Args
+        var who = args.Args.User; // Aurora's Song - HandledEvent>Args
         double price = 0.00;
 
         // All of the pop up display stuff is being handled by the PriceGunComponent addded to the PDA,
