@@ -76,7 +76,8 @@
       PDA-book: !type:ContainerSlot {} # Frontier
       PDA-license: !type:ContainerSlot {} # Aurora
       Cartridge-Slot: !type:ContainerSlot {}
-      program-container: !type:Container
+      preinstalled-program-container: !type:Container
+      removable-program-container: !type:Container
   - type: ItemSlots
   - type: Clothing
     quickEquip: false
@@ -101,14 +102,6 @@
 #    range: 500 # Frontier
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - CrewManifestCartridge
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - NewsReaderCartridge
-      - BountyContractsCartridge # Frontier
-      - AstroNavCartridge # Frontier
-      - NanoChatCartridge # Auroras Song
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -117,6 +110,17 @@
       whitelist:
         components:
           - Cartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: BountyContractsCartridge # Frontier
+        - id: AstroNavCartridge # Frontier
+        - id: NanoChatCartridge # Auroras Song
   - type: ActivatableUI
     key: enum.PdaUiKey.Key
     singleUser: true
@@ -189,32 +193,35 @@
   id: BaseSecurityPDA
   abstract: true
   components:
-  - type: CartridgeLoader
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - BountyContractsCartridge # Frontier
-    - AstroNavCartridge # Frontier
-    - NanoChatCartridge # Auroras Song
-    - WantedListCartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: BountyContractsCartridge # Frontier
+        - id: AstroNavCartridge # Frontier
+        - id: NanoChatCartridge # Auroras Song
+        - id: WantedListCartridge
 
 - type: entity
   parent: BasePDA
   id: BaseMedicalPDA
   abstract: true
-  # Frontier: cartridges moved to loadouts
-  # components:
-  # - type: CartridgeLoader
-  #   uiKey: enum.PdaUiKey.Key
-  #   preinstalled:
-  #     - CrewManifestCartridge
-  #     - NotekeeperCartridge
-  #     - NanoTaskCartridge
-  #     - NewsReaderCartridge
-  #     - MedTekCartridge
-  # End Frontier
+# Frontier: cartridges moved to loadouts
+# components:
+# - type: EntityTableContainerFill
+#   containers:
+#     preinstalled-program-container: !type:AllSelector
+#       children:
+#       - id: CrewManifestCartridge
+#       - id: NotekeeperCartridge
+#       - id: NanoTaskCartridge
+#       - id: NewsReaderCartridge
+#       - id: MedTekCartridge
+# End Frontier
 
 - type: entity
   parent: BasePDA
@@ -471,14 +478,6 @@
       whitelist:
         components:
         - Cartridge
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge # Aurora's Song
-    - NanoTaskCartridge # Aurora's Song
-    - NewsReaderCartridge
-    - BountyContractsCartridge # Aurora's Song
-    - AstroNavCartridge # Aurora's Song
-    - NanoChatCartridge # Aurora's Song
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:
@@ -490,6 +489,17 @@
   - type: Icon
     state: pda-mime
   - type: Muted # for random sentience event
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge # Aurora's Song
+        - id: NanoTaskCartridge # Aurora's Song
+        - id: NewsReaderCartridge
+        - id: BountyContractsCartridge # Aurora's Song
+        - id: AstroNavCartridge # Aurora's Song
+        - id: NanoChatCartridge # Aurora's Song
 
 - type: entity
   name: chaplain PDA
@@ -538,15 +548,17 @@
     accentVColor: "#a23e3e"
   - type: Icon
     state: pda-qm
-  - type: CartridgeLoader
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - BountyContractsCartridge # Aurora's Song
-    - AstroNavCartridge
-    - NanoChatCartridge # Auroras Song
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: BountyContractsCartridge # Aurora's Song
+        - id: AstroNavCartridge
+        - id: NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: BasePDA
@@ -584,16 +596,17 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-miner
-  # Frontier: cartridges moved to loadouts
-  # - type: CartridgeLoader
-  #   uiKey: enum.PdaUiKey.Key
-  #   preinstalled:
-  #     - CrewManifestCartridge
-  #     - NotekeeperCartridge
-  #     - NanoTaskCartridge
-  #     - NewsReaderCartridge
-  #     - AstroNavCartridge
-  # End Frontier
+# Frontier: cartridges moved to loadouts
+# - type: EntityTableContainerFill
+#   containers:
+#     preinstalled-program-container: !type:AllSelector
+#       children:
+#       - id: CrewManifestCartridge
+#       - id: NotekeeperCartridge
+#       - id: NanoTaskCartridge
+#       - id: NewsReaderCartridge
+#       - id: AstroNavCartridge
+# End Frontier
 
 - type: entity
   parent: BasePDA
@@ -937,14 +950,16 @@
     accentHColor: "#447987"
   - type: Icon
     state: pda-hos
-  - type: CartridgeLoader
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - WantedListCartridge
-    - LogProbeCartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: WantedListCartridge
+        - id: LogProbeCartridge
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1006,18 +1021,19 @@
     borderColor: "#00842e"
   - type: Icon
     state: pda-centcom
-  - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - CrewManifestCartridge
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - NewsReaderCartridge
-      - MedTekCartridge
-      - WantedListCartridge
-      - LogProbeCartridge
-      - AstroNavCartridge
-      - NanoChatCartridge # Auroras Song
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: MedTekCartridge
+        - id: WantedListCartridge
+        - id: LogProbeCartridge
+        - id: AstroNavCartridge
+        - id: NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: CentcomPDA
@@ -1034,19 +1050,20 @@
     scanDelay: 0
     silent: true
   - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
     notificationsEnabled: false
-    diskSpace: 10 # DeltaV
-    preinstalled:
-      - CrewManifestCartridge
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - NewsReaderCartridge
-      - LogProbeCartridge
-      - WantedListCartridge
-      - MedTekCartridge
-      - AstroNavCartridge
-      - NanoChatCartridge # Auroras Song
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: LogProbeCartridge
+        - id: WantedListCartridge
+        - id: MedTekCartridge
+        - id: AstroNavCartridge
+        - id: NanoChatCartridge # Auroras Song
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1161,13 +1178,14 @@
     borderColor: "#891417"
   - type: Icon
     state: pda-syndi
-  - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - AstroNavCartridge # Frontier
-      - NanoChatCartridge # Auroras Song
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: AstroNavCartridge # Frontier
+        - id: NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: [ SyndiPDA, BaseC3SyndicateContraband] # Aurora's Song - BaseSyndicateContraband<BaseC3SyndicateContraband
@@ -1204,12 +1222,13 @@
   - type: Icon
     sprite: *upstream-pda-icons # Aurora's Song
     state: pda-syndi-corpsman
-  - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - MedTekCartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: MedTekCartridge
 
 - type: entity
   parent: [ SyndiOperativePDA, BaseC3SyndicateContraband] # Aurora's Song - BaseSyndicateContraband<BaseC3SyndicateContraband
@@ -1249,19 +1268,20 @@
   - type: Icon
     sprite: *upstream-pda-icons # Aurora's Song
     state: pda-ert
-  - type: CartridgeLoader
-    uiKey: enum.PdaUiKey.Key
-    preinstalled:
-      - CrewManifestCartridge
-      - NotekeeperCartridge
-      - NanoTaskCartridge
-      - NewsReaderCartridge
-      - MedTekCartridge
-      - WantedListCartridge
-      - LogProbeCartridge
-      - AstroNavCartridge
-      - MailMetricsCartridge # Frontier
-      - NanoChatCartridge # Auroras Song
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: MedTekCartridge
+        - id: WantedListCartridge
+        - id: LogProbeCartridge
+        - id: AstroNavCartridge
+        - id: MailMetricsCartridge # Frontier
+        - id: NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1424,14 +1444,16 @@
     borderColor: "#774705"
   - type: Icon
     state: pda-detective
-  - type: CartridgeLoader
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - WantedListCartridge
-    - LogProbeCartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: WantedListCartridge
+        - id: LogProbeCartridge
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1452,14 +1474,16 @@
     accentVColor: "#d7d7d0"
   - type: Icon
     state: pda-brigmedic
-  - type: CartridgeLoader
-    preinstalled:
-    - CrewManifestCartridge
-    - NotekeeperCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - WantedListCartridge
-    - MedTekCartridge
+  - type: EntityTableContainerFill
+    containers:
+      preinstalled-program-container: !type:AllSelector
+        children:
+        - id: CrewManifestCartridge
+        - id: NotekeeperCartridge
+        - id: NanoTaskCartridge
+        - id: NewsReaderCartridge
+        - id: WantedListCartridge
+        - id: MedTekCartridge
 
 - type: entity
   parent: ClownPDA
