@@ -1956,3 +1956,10 @@ Entries:
   id: 9603
   time: '2026-07-11T16:54:30.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1225
+- author: mothrii
+  changes:
+    - type: Add
+      message: Ports the Holobell Projector for any doorbell needs
+  id: 9604
+  time: '2026-07-11T19:40:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1228
