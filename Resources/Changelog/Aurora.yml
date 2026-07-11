@@ -1919,3 +1919,10 @@ Entries:
   id: 9598
   time: '2026-07-10T22:51:33.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1200
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: Ore bags (and other magets) work like before the upmerge!
+  id: 9599
+  time: '2026-07-11T00:29:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1241
