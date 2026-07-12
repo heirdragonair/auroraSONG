@@ -54,7 +54,7 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    Digestion: # Aurora's Song - Drink>Digestion
       effects:
       - !type:SatiateThirst
         factor: 2
@@ -75,11 +75,12 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
   metabolisms:
-    Drink:
+    # Aurora's Song Start - digestion Fix
+    Digestion:
+      metabolites:
+        Psicodine: 0.10
+    # Aurora's Song End
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
-        reagent: Psicodine
-        amount: 0.10
   fizziness: 0.8
