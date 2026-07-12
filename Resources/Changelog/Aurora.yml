@@ -1970,3 +1970,10 @@ Entries:
   id: 9605
   time: '2026-07-12T07:08:36.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1245
+- author: mothrii
+  changes:
+    - type: Add
+      message: Some new colorful glasses available for your loadout!
+  id: 9606
+  time: '2026-07-12T20:17:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1244
