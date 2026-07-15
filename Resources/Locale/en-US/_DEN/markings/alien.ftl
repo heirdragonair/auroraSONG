@@ -20,7 +20,3 @@ marking-AlienEyesThree-eyes_alien_three=Eyes
 
 marking-AlienEyesWide=Alien Eyes (Wide)
 marking-AlienEyesWide-eyes_alien_wide=Eyes
-
-# Overlays
-marking-AlienOverlayHead=Alien Head Overlay
-marking-AlienOverlayHead-head=Head
