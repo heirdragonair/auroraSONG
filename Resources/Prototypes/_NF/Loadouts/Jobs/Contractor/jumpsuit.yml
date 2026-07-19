@@ -340,6 +340,24 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCoyotePants
 
+- type: loadout # Aurora's Song - coyote pants recolor
+  id: ContractorClothingUniformJumpsuitJackalPants
+  price: 200
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitJackalPants    
+
+- type: loadout # Aurora's Song - coyote pants recolor
+  id: ContractorClothingUniformJumpsuitWolfPants
+  price: 200
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWolfPants    
+
+- type: loadout # Aurora's Song - coyote pants recolor
+  id: ContractorClothingUniformJumpsuitHoundPants
+  price: 200
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoundPants
+
 #T1
 - type: loadout
   id: ContractorClothingUniformJumpsuitColorDarkBlue
